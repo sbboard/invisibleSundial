@@ -83,7 +83,8 @@ body #splash {
     width: 400px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    z-index: 50; }
     @media (max-width: 500px) {
       body #splash #socMedia {
         width: 90%;
