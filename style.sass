@@ -36,7 +36,13 @@ input
     -webkit-appearance: none
     border-radius: 0
 
+@mixin mobile
+    @media (max-width: 500px)
+        @content
+
 body
+    .section
+        padding: 1em
     #webPlayer
         background-color: rgba(0,0,0,.75)
         color: white
@@ -54,18 +60,43 @@ body
         justify-content: center
         align-items: center
         flex-direction: column
+        background-image: url('img/bg1.gif')
+        background-position: center
+        background-size: cover
+        image-rendering: pixelated
+        image-rendering: -moz-crisp-edges
+        image-rendering: crisp-edges
         img
-            filter: invert(1)
+            filter: invert(1) drop-shadow(7px 0px 0px red) drop-shadow(-7px 0px 0px cyan)
             width: 500px
             height: auto
+            transition: width 1s height 1s
+            @include mobile
+                width: 90%
+        #rabbit_holder
+            width: 100%
+            position: absolute
+            bottom: 0
+            img
+                height: initial
+                width: initial
+                filter: none
         #socMedia
             margin-top: 1em
             font-size: 3em
             width: 400px
             display: flex
             justify-content: space-between
+            flex-wrap: wrap
+            @include mobile
+                width: 90%
+                font-size: 2.5em
             svg
                 color: white
+                filter: drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan)
+                -webkit-transition : -webkit-filter .25s linear
+                &:hover
+                    filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px cyan)
     #calendar
         iframe
             margin: 0 auto
@@ -74,7 +105,6 @@ body
     footer
         width: 100%
         color: white
-        text-align: right
         background-color: black
     nav
         a

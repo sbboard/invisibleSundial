@@ -36,6 +36,8 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+body .section {
+  padding: 1em; }
 body #webPlayer {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
@@ -52,19 +54,46 @@ body #splash {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-image: url("img/bg1.gif");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges; }
   body #splash img {
-    filter: invert(1);
+    filter: invert(1) drop-shadow(7px 0px 0px red) drop-shadow(-7px 0px 0px cyan);
     width: 500px;
-    height: auto; }
+    height: auto;
+    transition: width 1s height 1s; }
+    @media (max-width: 500px) {
+      body #splash img {
+        width: 90%; } }
+  body #splash #rabbit_holder {
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
+    body #splash #rabbit_holder img {
+      height: initial;
+      width: initial;
+      filter: none; }
   body #splash #socMedia {
     margin-top: 1em;
     font-size: 3em;
     width: 400px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media (max-width: 500px) {
+      body #splash #socMedia {
+        width: 90%;
+        font-size: 2.5em; } }
     body #splash #socMedia svg {
-      color: white; }
+      color: white;
+      filter: drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
+      -webkit-transition: -webkit-filter 0.25s linear; }
+      body #splash #socMedia svg:hover {
+        filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px cyan); }
 body #calendar iframe {
   margin: 0 auto;
   display: block;
@@ -72,7 +101,6 @@ body #calendar iframe {
 body footer {
   width: 100%;
   color: white;
-  text-align: right;
   background-color: black; }
 body nav {
   position: fixed;
