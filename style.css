@@ -36,18 +36,36 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body .section {
   padding: 1em; }
+  body .section .sectionWrap {
+    max-width: 1000px;
+    margin: 0 auto; }
 body #webPlayer {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
   color: white;
   position: fixed;
   top: 0;
   border-bottom: 1px white;
-  text-align: center;
   width: 100%;
-  padding: 1em 0;
-  z-index: 500; }
+  padding: 1em;
+  z-index: 500;
+  font-size: 1.25em;
+  box-shadow: 0 0 40px 0 #000; }
+  body #webPlayer #wave {
+    height: 1em;
+    display: inline-block;
+    width: calc(100% - 2.5em); }
+  body #webPlayer #playerWrap {
+    max-width: 1000px;
+    margin: 0 auto; }
+  body #webPlayer svg {
+    display: inline-block; }
+  body #webPlayer #songTitle {
+    display: inline-block; }
 body #splash {
   background-color: black;
   height: 100vh;
@@ -62,7 +80,7 @@ body #splash {
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges; }
   body #splash img {
-    filter: invert(1) drop-shadow(7px 0px 0px red) drop-shadow(-7px 0px 0px cyan);
+    filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
     width: 500px;
     height: auto;
     transition: width 1s height 1s; }
@@ -91,7 +109,7 @@ body #splash {
         font-size: 2.5em; } }
     body #splash #socMedia svg {
       color: white;
-      filter: drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
+      filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
       -webkit-transition: -webkit-filter 0.25s linear; }
       body #splash #socMedia svg:hover {
         filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px cyan); }
