@@ -1,8 +1,19 @@
 let img;
+const tracks = ['mp3/alvvays.mp3','mp3/creed.mp3','mp3/crazy-santa.mp3']
+const names = ['alvvays','creed','crazy santa']
+let index = Math.floor(Math.random() * tracks.length)
 
 function preload() {
-  sound = loadSound("mp3/alvvays.mp3");
+  sound = loadSound(tracks[index]);
   img = loadImage("img/black.png");
+}
+
+function nextTrack(){
+  sound.stop();
+  index++
+  sound = loadSound(tracks[index]);
+  text(names[index], 0, 0, width);
+  sound.play()
 }
 
 function setup() {
@@ -26,7 +37,7 @@ function draw() {
 
   var spectrum = fft.analyze();
   noStroke();
-  fill(0, 255, 0); // spectrum is green
+  fill(255, 255, 255); // spectrum is green
   for (var i = 0; i < spectrum.length; i++) {
     var x = map(i, 0, spectrum.length, 0, width);
     var h = -height + map(spectrum[i], 0, 255, height, 0);
@@ -46,7 +57,7 @@ function draw() {
   endShape();
 
   textAlign(CENTER, TOP);
-  text("peen dog", 0, 0, width);
+  text(names[index], 0, 0, width);
 }
 
 // fade sound if mouse is over canvas
