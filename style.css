@@ -37,103 +37,168 @@ input {
   border-radius: 0; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: black; }
 
-body .section {
-  padding: 1em; }
-  body .section .sectionWrap {
-    max-width: 1000px;
-    margin: 0 auto; }
-body #webPlayer {
-  background-color: black;
-  color: red;
-  position: fixed;
-  top: 0;
-  border-bottom: 1px white;
-  width: 100%;
-  padding: 1em;
-  z-index: 500;
-  font-size: 1.25em;
-  box-shadow: 0 0 40px 0 #000; }
-  body #webPlayer #wave {
-    height: 1em;
-    display: inline-block;
-    width: calc(100% - 2.5em); }
-  body #webPlayer #playerWrap {
-    max-width: 1000px;
+body {
+  color: white; }
+  body h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+    filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan); }
+  body .section {
+    padding: 1em;
+    position: relative; }
+    body .section .sectionWrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      z-index: 2;
+      position: inherit; }
+      body .section .sectionWrap img {
+        max-width: 75%;
+        display: block;
+        margin: 0 auto; }
+    body .section .darken {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: black;
+      opacity: 0.5;
+      pointer-events: none;
+      z-index: 1; }
+  body #webPlayer {
+    background-color: black;
+    color: red;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px white;
+    width: 100%;
+    padding: 1em;
+    z-index: 500;
+    font-size: 1.25em;
+    box-shadow: 0 0 40px 0 #000; }
+    body #webPlayer #wave {
+      height: 1em;
+      display: inline-block;
+      width: calc(100% - 2.5em); }
+    body #webPlayer #playerWrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex; }
+    body #webPlayer svg {
+      display: inline-block; }
+    body #webPlayer #songTitle {
+      display: inline-block; }
+  body #splash {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("img/bg1.gif");
+    background-position: center;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges; }
+    body #splash img {
+      filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
+      width: 500px;
+      height: auto;
+      transition: width 1s height 1s; }
+      @media (max-width: 500px) {
+        body #splash img {
+          width: 90%; } }
+    body #splash #rabbit_holder {
+      width: 100%;
+      position: absolute;
+      bottom: 0; }
+      body #splash #rabbit_holder img {
+        height: initial;
+        width: initial;
+        filter: none; }
+    body #splash #socMedia {
+      margin-top: 1em;
+      font-size: 3em;
+      width: 400px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      z-index: 50; }
+      @media (max-width: 500px) {
+        body #splash #socMedia {
+          width: 90%;
+          font-size: 2.5em; } }
+      body #splash #socMedia svg {
+        color: white;
+        filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
+        -webkit-transition: -webkit-filter 0.25s linear; }
+        body #splash #socMedia svg:hover {
+          filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px cyan); }
+  body #calendar iframe {
     margin: 0 auto;
-    display: flex; }
-  body #webPlayer svg {
-    display: inline-block; }
-  body #webPlayer #songTitle {
-    display: inline-block; }
-body #splash {
-  background-color: black;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-image: url("img/bg1.gif");
+    display: block;
+    border: 0; }
+  body footer {
+    width: 100%;
+    color: white;
+    background-color: black; }
+  body nav {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    padding: 1em 1em;
+    width: fit-content;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+    body nav a {
+      color: white; }
+
+#blog {
+  background-image: url("img/1.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges; }
-  body #splash img {
-    filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
-    width: 500px;
-    height: auto;
-    transition: width 1s height 1s; }
-    @media (max-width: 500px) {
-      body #splash img {
-        width: 90%; } }
-  body #splash #rabbit_holder {
-    width: 100%;
-    position: absolute;
-    bottom: 0; }
-    body #splash #rabbit_holder img {
-      height: initial;
-      width: initial;
-      filter: none; }
-  body #splash #socMedia {
-    margin-top: 1em;
-    font-size: 3em;
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    z-index: 50; }
-    @media (max-width: 500px) {
-      body #splash #socMedia {
-        width: 90%;
-        font-size: 2.5em; } }
-    body #splash #socMedia svg {
-      color: white;
-      filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
-      -webkit-transition: -webkit-filter 0.25s linear; }
-      body #splash #socMedia svg:hover {
-        filter: drop-shadow(-4px 0px 0px red) drop-shadow(4px 0px 0px cyan); }
-body #calendar iframe {
-  margin: 0 auto;
-  display: block;
-  border: 0; }
-body footer {
-  width: 100%;
-  color: white;
-  background-color: black; }
-body nav {
-  position: fixed;
-  bottom: 0;
-  background-color: black;
-  padding: 1em 1em;
-  width: fit-content;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  left: 0;
-  right: 0;
-  margin: 0 auto; }
-  body nav a {
-    color: white; }
+
+#albums {
+  background-image: url("img/ripple.gif");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges; }
+
+#aboutUs {
+  background-image: url("img/pinkgems.gif");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges; }
+
+#calendar {
+  background-image: url("img/stars.gif");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges; }
+
+#merch {
+  background-image: url("img/redbluerain.gif");
+  background-position: center;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges; }
 
 /*# sourceMappingURL=style.css.map */
