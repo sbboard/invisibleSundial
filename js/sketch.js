@@ -47,7 +47,7 @@ function draw() {
   var waveform = fft.waveform();
   noFill();
   beginShape();
-  stroke(255, 0, 0); // waveform is red
+  stroke(255, 255, 255); // waveform is red
   strokeWeight(1);
   for (var i = 0; i < waveform.length; i++) {
     var x = map(i, 0, waveform.length, 0, width);
@@ -56,8 +56,8 @@ function draw() {
   }
   endShape();
 
-  textAlign(CENTER, TOP);
-  text(names[index], 0, 0, width);
+  //textAlign(CENTER, TOP);
+  //text(names[index], 0, 0, width);
 }
 
 // fade sound if mouse is over canvas

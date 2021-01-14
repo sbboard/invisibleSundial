@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: alot;
+  src: url("fonts/alot3.ttf"); }
+@font-face {
+  font-family: fuzzy;
+  src: url("fonts/fuzzy2.ttf"); }
+@font-face {
+  font-family: fuzzyH;
+  src: url("fonts/fuzzy1.ttf"); }
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -36,17 +46,36 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
+#topBox {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 40px 0 #000;
+  width: 100%; }
+  #topBox #topWrap {
+    width: fit-content; }
+
 html {
   scroll-behavior: smooth;
   background-color: black; }
 
 body {
-  color: white; }
+  color: white;
+  font-family: "Roboto", sans-serif; }
   body h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 0.5em;
-    font-weight: 800;
-    filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan); }
+    background-color: black;
+    padding: 0 0.5em;
+    text-align: center;
+    font-family: alot;
+    text-transform: uppercase; }
+    body h1 span {
+      filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
+      padding-top: 0.15em;
+      display: block; }
   body .section {
     padding: 1em;
     position: relative; }
@@ -59,6 +88,9 @@ body {
         max-width: 75%;
         display: block;
         margin: 0 auto; }
+      body .section .sectionWrap p {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1em; }
     body .section .darken {
       width: 100%;
       height: 100%;
@@ -70,16 +102,11 @@ body {
       pointer-events: none;
       z-index: 1; }
   body #webPlayer {
-    background-color: black;
-    color: red;
-    position: fixed;
+    margin-top: 0.5em;
     top: 0;
-    border-bottom: 1px white;
-    width: 100%;
-    padding: 1em;
+    width: 101%;
     z-index: 500;
-    font-size: 1.25em;
-    box-shadow: 0 0 40px 0 #000; }
+    font-size: 1.25em; }
     body #webPlayer #wave {
       height: 1em;
       display: inline-block;
@@ -87,9 +114,11 @@ body {
     body #webPlayer #playerWrap {
       max-width: 1000px;
       margin: 0 auto;
-      display: flex; }
+      display: flex;
+      justify-content: center; }
     body #webPlayer svg {
-      display: inline-block; }
+      display: inline-block;
+      cursor: pointer; }
     body #webPlayer #songTitle {
       display: inline-block; }
   body #splash {
@@ -148,18 +177,20 @@ body {
     color: white;
     background-color: black; }
   body nav {
-    position: fixed;
-    bottom: 0;
+    font-family: fuzzy;
+    font-size: 1.5em;
+    color: white;
     background-color: black;
-    padding: 1em 1em;
-    width: fit-content;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    padding: 0em 0em;
     left: 0;
     right: 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 5000; }
     body nav a {
-      color: white; }
+      color: white;
+      text-decoration: none; }
+      body nav a:hover {
+        font-family: fuzzyH; }
 
 #blog {
   background-image: url("img/1.gif");
