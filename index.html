@@ -8,9 +8,12 @@
       rel="stylesheet"
       href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
     <script src="js/p5.min.js"></script>
     <script src="js/p5.sound.min.js"></script>
+    <script src="js/jquery.gcal_flow.js"></script>
+    <!--<link rel="stylesheet" href="js/jquery.gcal_flow.css" />-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -89,17 +92,16 @@
       </div>
     </div>
     <div id="calendar" class="section">
-      <!--<div class="darken"></div>-->
       <div class="sectionWrap">
         <h1><span>calendar</span></h1>
-        <iframe
-          src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=OTluOG1vZGkzNW1wNDVnb2F0N2FjMnMyOWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23795548&amp;showTitle=0&amp;showNav=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0"
-          style="border-width: 0"
-          width="800"
-          height="600"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
+
+        <div id="gcf-design"></div>
+        <script type="text/javascript">
+          $("#gcf-design").gCalFlow({
+            calid: "99n8modi35mp45goat7ac2s29g@group.calendar.google.com",
+            maxitem: 10,
+          });
+        </script>
       </div>
     </div>
 

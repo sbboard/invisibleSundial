@@ -55,7 +55,8 @@ input {
   box-shadow: 0 0 40px 0 #000;
   width: 100%; }
   #topBox #topWrap {
-    width: fit-content; }
+    width: fit-content;
+    margin: 0 auto; }
 
 html {
   scroll-behavior: smooth;
@@ -102,9 +103,8 @@ body {
       pointer-events: none;
       z-index: 1; }
   body #webPlayer {
-    margin-top: 0.5em;
     top: 0;
-    width: 101%;
+    width: 100%;
     z-index: 500;
     font-size: 1.25em; }
     body #webPlayer #wave {
@@ -181,7 +181,7 @@ body {
     font-size: 1.5em;
     color: white;
     background-color: black;
-    padding: 0em 0em;
+    padding: 0em 0.25em 0em 0em;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -231,5 +231,29 @@ body {
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges; }
+
+#gcf-design {
+  width: 100%;
+  border-radius: 0;
+  color: white; }
+  #gcf-design a {
+    color: white; }
+  #gcf-design #gcf-header-block {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  #gcf-design .gcf-last-update-block {
+    display: none; }
+  #gcf-design .gcf-item-date-block {
+    border-right: 1px solid white;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.5em 0.5em 0.5em 0; }
+  #gcf-design .gcf-item-title-block {
+    display: inline-block; }
+  #gcf-design .gcf-item-block {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white; }
+  #gcf-design .gcf-title-block {
+    margin-top: 1em; }
 
 /*# sourceMappingURL=style.css.map */
