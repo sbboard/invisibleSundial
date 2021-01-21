@@ -85,6 +85,9 @@ body {
       margin: 0 auto;
       z-index: 2;
       position: inherit; }
+      body .section .sectionWrap h4 {
+        text-align: center;
+        text-transform: uppercase; }
       body .section .sectionWrap img {
         max-width: 75%;
         display: block;
@@ -92,6 +95,22 @@ body {
       body .section .sectionWrap p {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 1em; }
+      body .section .sectionWrap.theAlbums .albumBox {
+        text-align: center; }
+        body .section .sectionWrap.theAlbums .albumBox .albumWrap {
+          display: inline-block;
+          padding: 12.5px;
+          transition: padding 0.25s; }
+          body .section .sectionWrap.theAlbums .albumBox .albumWrap:hover {
+            padding: 6.25px; }
+            body .section .sectionWrap.theAlbums .albumBox .albumWrap:hover img {
+              width: 250px;
+              height: 250px; }
+          body .section .sectionWrap.theAlbums .albumBox .albumWrap img {
+            width: 237.5px;
+            height: 237.5px;
+            max-width: inherit;
+            transition: width 0.25s, height 0.25s; }
     body .section .darken {
       width: 100%;
       height: 100%;
@@ -175,7 +194,15 @@ body {
   body footer {
     width: 100%;
     color: white;
-    background-color: black; }
+    background-color: black;
+    position: relative; }
+    body footer #copyright {
+      position: absolute;
+      bottom: 1em;
+      margin: 0 auto;
+      left: 0;
+      text-align: center;
+      right: 0; }
   body nav {
     font-family: fuzzy;
     font-size: 1.5em;
