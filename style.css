@@ -238,6 +238,11 @@ body {
       text-decoration: none; }
       body nav a:hover {
         font-family: fuzzyH; }
+    body nav #secret {
+      font-family: fuzzyH;
+      position: absolute !important;
+      top: -9999px !important;
+      left: -9999px !important; }
 
 #blog {
   background-image: url("img/1.gif");
