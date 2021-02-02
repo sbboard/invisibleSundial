@@ -13,8 +13,7 @@
     <script src="js/p5.min.js"></script>
     <script src="js/p5.sound.min.js"></script>
     <script src="js/jquery.gcal_flow.js"></script>
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/style.css">
-	  <?php wp_head(); ?>
+    <link rel="stylesheet" href="style.css">
   </head>
 	  <body>
     <div id="topBox">
