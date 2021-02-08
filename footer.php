@@ -13,6 +13,6 @@
       The Invisible Sundial
     </div>
     </footer>
+<?php //wp_footer(); ?>
   </body>
-  <script src="js/sketch.js"></script>
 </html>

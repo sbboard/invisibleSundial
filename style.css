@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: alot;
-  src: url("/fonts/alot3.ttf"); }
+  src: url("./fonts/alot3.ttf"); }
 @font-face {
   font-family: fuzzy;
-  src: url("/fonts/fuzzy2.ttf"); }
+  src: url("./fonts/fuzzy2.ttf"); }
 @font-face {
   font-family: fuzzyH;
-  src: url("/fonts/fuzzy1.ttf"); }
+  src: url("./fonts/fuzzy1.ttf"); }
 @keyframes fadeInOut {
   from {
     opacity: 0.5; }
   to {
     opacity: 0.75; } }
+@keyframes breath {
+  from {
+    filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan); }
+  to {
+    filter: invert(1) drop-shadow(8px 0px 0px red) drop-shadow(-8px 0px 0px cyan); } }
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -53,11 +58,7 @@ input {
 
 #topBox {
   background-color: black;
-  position: fixed;
-  top: 0;
-  z-index: 200;
-  border-bottom: 2px solid white;
-  box-shadow: 0 0 40px 0 #000;
+  padding: 2em 0;
   width: 100%; }
   #topBox #topWrap {
     width: fit-content;
@@ -129,7 +130,8 @@ body {
           position: absolute;
           top: 0;
           z-index: 255;
-          animation: fadeInOut 5s infinite alternate linear;
+          animation: fadeInOut 3s infinite alternate;
+          animation-timing-function: ease-in-out;
           mix-blend-mode: lighten; }
     body .section .darken {
       width: 100%;
@@ -167,7 +169,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url("/img/bg1.gif");
+    background-image: url("./img/bg1.gif");
     background-position: center;
     background-size: cover;
     image-rendering: pixelated;
@@ -176,8 +178,7 @@ body {
     body #splash img {
       filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
       width: 500px;
-      height: auto;
-      transition: width 1s height 1s; }
+      height: auto; }
       @media (max-width: 500px) {
         body #splash img {
           width: 90%; } }
@@ -245,7 +246,7 @@ body {
       left: -9999px !important; }
 
 #blog {
-  background-image: url("/img/1.gif");
+  background-image: url("./img/1.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
@@ -253,7 +254,7 @@ body {
   image-rendering: crisp-edges; }
 
 #albums {
-  background-image: url("/img/ripple.gif");
+  background-image: url("./img/ripple.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
@@ -261,15 +262,18 @@ body {
   image-rendering: crisp-edges; }
 
 #aboutUs {
-  background-image: url("/img/pinkgems.gif");
+  background-image: url("./img/pinkgems.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges; }
+  #aboutUs p {
+    display: block;
+    margin-bottom: 1em; }
 
 #calendar {
-  background-image: url("/img/stars.gif");
+  background-image: url("./img/stars.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
@@ -277,7 +281,7 @@ body {
   image-rendering: crisp-edges; }
 
 #merch {
-  background-image: url("/img/redbluerain.gif");
+  background-image: url("./img/redbluerain.gif");
   background-position: center;
   background-size: cover;
   image-rendering: pixelated;
