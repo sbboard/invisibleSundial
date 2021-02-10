@@ -19,3 +19,5 @@
 	  </style>
   </head>
 	  <body>
+    <audio id="mainTrack" src="./mp3/crazy-santa.mp3" volume=".2" autoplay loop></audio>
+    <audio id="secretTrack" src="./mp3/creed.mp3" preload volume=".2" loop></audio>
