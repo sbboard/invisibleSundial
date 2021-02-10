@@ -101,22 +101,6 @@ body {
       body .section .sectionWrap p {
         background-color: rgba(0, 0, 0, 0.8);
         padding: 1em; }
-      body .section .sectionWrap.theAlbums .albumBox {
-        text-align: center; }
-        body .section .sectionWrap.theAlbums .albumBox .albumWrap {
-          display: inline-block;
-          padding: 12.5px;
-          transition: padding 0.25s; }
-          body .section .sectionWrap.theAlbums .albumBox .albumWrap:hover {
-            padding: 6.25px; }
-            body .section .sectionWrap.theAlbums .albumBox .albumWrap:hover img {
-              width: 250px;
-              height: 250px; }
-          body .section .sectionWrap.theAlbums .albumBox .albumWrap img {
-            width: 237.5px;
-            height: 237.5px;
-            max-width: inherit;
-            transition: width 0.25s, height 0.25s; }
       body .section .sectionWrap #fadeImg {
         max-width: 1000px;
         width: 100%;
@@ -312,7 +296,40 @@ body {
   #gcf-design .gcf-title-block {
     margin-top: 1em; }
 
-#albumPage {
-  margin-top: 49px; }
+#albumsHere {
+  width: 228px;
+  background-color: red;
+  display: inline-block; }
+  #albumsHere .albumBox {
+    position: relative; }
+    #albumsHere .albumBox:last-of-type .infoBox {
+      padding: 0 0 0 1em; }
+    #albumsHere .albumBox .yearBox {
+      height: 150px;
+      position: absolute;
+      top: 0;
+      align-items: center;
+      display: flex; }
+    #albumsHere .albumBox .infoBox {
+      display: inline-flex;
+      border-left: 1px solid white;
+      padding: 0 0 1em 1em;
+      margin-left: 2.75em; }
+      #albumsHere .albumBox .infoBox img {
+        display: inline-block;
+        height: 130px;
+        max-width: initial;
+        width: auto;
+        margin: 10px;
+        transition: height 0.5s, width 0.5s, margin 0.5s; }
+        #albumsHere .albumBox .infoBox img:hover {
+          margin: 0;
+          height: 150px; }
+
+#infoHere {
+  background-color: green;
+  display: inline-block;
+  width: calc(100% - 228px);
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */

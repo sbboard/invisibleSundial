@@ -109,23 +109,6 @@ body
             p
                 background-color: rgba(0,0,0,.8)
                 padding: 1em
-            &.theAlbums
-                .albumBox
-                    text-align: center
-                    .albumWrap
-                        display: inline-block
-                        padding: 12.5px     
-                        transition: padding .25s
-                        &:hover
-                            padding: 6.25px
-                            img
-                                width: 250px
-                                height: 250px
-                        img
-                            width: 237.5px
-                            height: 237.5px
-                            max-width: inherit
-                            transition: width .25s, height .25s
             #fadeImg
                 max-width: 1000px
                 width: 100%
@@ -323,5 +306,41 @@ body
         border-bottom: 1px solid white
     .gcf-title-block
         margin-top: 1em
-#albumPage
-    margin-top: 49px
+
+$boxHeight: 150px
+
+#albumsHere
+    width: 228px
+    background-color: red
+    display: inline-block
+    .albumBox
+        position: relative        
+        &:last-of-type
+            .infoBox
+                padding: 0 0 0 1em
+        .yearBox
+            height: $boxHeight
+            position: absolute
+            top: 0
+            align-items: center
+            display: flex
+        .infoBox
+            display: inline-flex
+            border-left: 1px solid white
+            padding: 0 0 1em 1em
+            margin-left: 2.75em
+            img
+                display: inline-block
+                height: $boxHeight - 20px
+                max-width: initial
+                width: auto
+                margin: 10px
+                transition: height .5s, width .5s, margin .5s
+                &:hover
+                    margin: 0
+                    height: $boxHeight
+#infoHere
+    background-color: green
+    display: inline-block
+    width: calc(100% - 228px)
+    position: absolute

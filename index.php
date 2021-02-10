@@ -29,31 +29,16 @@
 <div id="topBox">
       <div id="topWrap">
         <nav>
-          <a href="#albums">discography</a>
           <a href="#blog">news</a>
-          <a href="#aboutUs">about us</a>
+          <a href="#albums">discography</a>
+          <!-- <a href="#aboutUs">about us</a> -->
           <a href="#calendar">calendar</a>
           <!-- <a href="#merch">merch</a> -->
         </nav>
       </div>
     </div>
 
-<div id="albums" class="section">
-  <div class="sectionWrap theAlbums">
-    <h1><span>discography</span></h1>
-    <div id="albumsHere"></div>
-    <script src="js/genAlbums.js"></script>
-  </div>
-</div>
-<div id="blog" class="section">
-  <div class="sectionWrap">
-    <h1><span>news</span></h1>
-    
-[display-posts posts_per_page="3" image_size="thumbnail" include_excerpt="true"]
-    
-  </div>
-</div>
-<div id="aboutUs" class="section">
+    <!-- <div id="aboutUs" class="section">
   <div class="sectionWrap">
     <h1><span>about us</span></h1>
     <p>The Invisible Sundial is a genre-fusing, instrumental solo project based off one bold premise: not everything which creates sound has to be a traditional instrument.</br></br>
@@ -67,7 +52,40 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
       <img class="topImg" src="img/band1.JPG">
     </div>
   </div>
+</div> -->
+
+<div id="blog" class="section">
+  <div class="sectionWrap">
+    <h1><span>news</span></h1>
+    
+[display-posts posts_per_page="3" image_size="thumbnail" include_excerpt="true"]
+    
+  </div>
 </div>
+
+<div id="albums" class="section">
+  <div class="sectionWrap theAlbums">
+    <h1><span>discography</span></h1>
+    <div id="albumsHere">
+      <div class="albumBox">
+        <div class="yearBox">1999 -</div>
+        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
+      </div>
+      <div class="albumBox">
+        <div class="yearBox">1999 -</div>
+        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
+      </div>
+      <div class="albumBox">
+        <div class="yearBox">1999 -</div>
+        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
+      </div>
+    </div><div id="infoHere">
+    fff
+    </div>
+    <!-- <script src="js/genAlbums.js"></script> -->
+</div>
+</div>
+
 <div id="calendar" class="section">
   <div class="sectionWrap">
     <h1><span>calendar</span></h1>
