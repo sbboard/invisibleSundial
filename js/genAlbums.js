@@ -3,19 +3,11 @@ let toInput = "";
 fetch("albums.json")
   .then((response) => response.json())
   .then(function (json) {
-    toInput += `<h4>Albums</h4><div class="albumBox">`;
     for (let i = 0; i < json.albums.length; i++) {
-      if (json.albums[i].type == "album") {
-        toInput += `<div class="albumWrap"><a href="album.php?album=${i}"><img src="img/albums/${json.albums[i].art}"></a></div>`;
+      if (json.albums[i].date != "") {
+        toInput += `<div class="albumBox"><div class="yearBox">${json.albums[i].date} -</div><div class="infoBox"><a href="album.php?album=1"><img src="img/albums/${json.albums[i].art}"></a></div></div>`;
       }
     }
-    toInput += `</div><h4>EPs</h4><div class="albumBox">`;
-    for (let i = 0; i < json.albums.length; i++) {
-      if (json.albums[i].type == "EP") {
-        toInput += `<div class="albumWrap"><a href="album.php?album=${i}"><img src="img/albums/${json.albums[i].art}"></a></div>`;
-      }
-    }
-    toInput += "</div>";
     albumBox.innerHTML = toInput;
   });
 {

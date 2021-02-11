@@ -66,23 +66,10 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
 <div id="albums" class="section">
   <div class="sectionWrap theAlbums">
     <h1><span>discography</span></h1>
-    <div id="albumsHere">
-      <div class="albumBox">
-        <div class="yearBox">1999 -</div>
-        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
-      </div>
-      <div class="albumBox">
-        <div class="yearBox">1999 -</div>
-        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
-      </div>
-      <div class="albumBox">
-        <div class="yearBox">1999 -</div>
-        <div class="infoBox"><a href="album.php?album=1"><img src="img/albums/open1.jpg"></a></div>
-      </div>
-    </div><div id="infoHere">
+    <div id="albumsHere"></div><div id="infoHere">
     fff
     </div>
-    <!-- <script src="js/genAlbums.js"></script> -->
+    <script src="js/genAlbums.js"></script>
 </div>
 </div>
 

@@ -12,7 +12,7 @@
     },
     {
       "title": "Four Years in August",
-      "date": "11/17/12",
+      "date": "2012",
       "art": "open1.jpg",
       "tracks": [
         "Not To Be Taken Away",
@@ -31,9 +31,24 @@
       "spotify": "https://open.spotify.com/album/3T0F9ymc3PirDK7iWlfmgO",
       "type": "album"
     },
+
+    {
+      "title": "All Winter's Wish",
+      "date": "2019",
+      "art": "open5.jpg",
+      "tracks": [
+        "All Winter's Wish",
+        "Ice Without the Wool",
+        "Christmas Time Is Here"
+      ],
+      "credits": "Davin Payne - Raps<br>Daniel Gensel - Artiphon<br>Gabriel Tiburcio - Guitar<br>Rambush - Rhodes<br>Tony Domenico - Sunvox<br>rika - singing<br>JohnDavid Kagawa - Synth<br>Austin Amberg - Synth<br>Cover art by Taras Tymoshenko",
+      "bandcamp": "https://theinvisiblesundial.bandcamp.com/album/all-winters-wish",
+      "spotify": "https://open.spotify.com/album/1yv5A2aSrRgK8fsGRlH4A9",
+      "type": "EP"
+    },
     {
       "title": "Two Ceramic Lions",
-      "date": "11/11/16",
+      "date": "2016",
       "art": "open2.jpg",
       "tracks": [
         "hotshot debutante",
@@ -52,7 +67,7 @@
     },
     {
       "title": "Please Stop By For Christmas",
-      "date": "12/22/17",
+      "date": "2017",
       "art": "open3.jpg",
       "tracks": [
         "please stop by for christmas",
@@ -66,7 +81,7 @@
     },
     {
       "title": "one seed, one crown",
-      "date": "11/5/19",
+      "date": "2019",
       "art": "open4.jpg",
       "tracks": [
         "one seed",
@@ -86,20 +101,6 @@
       "bandcamp": "https://theinvisiblesundial.bandcamp.com/album/one-seed-one-crown",
       "spotify": "https://open.spotify.com/album/61hUdban6otQ9xWEe1OIVA",
       "type": "album"
-    },
-    {
-      "title": "All Winter's Wish",
-      "date": "12/12/19",
-      "art": "open5.jpg",
-      "tracks": [
-        "All Winter's Wish",
-        "Ice Without the Wool",
-        "Christmas Time Is Here"
-      ],
-      "credits": "Davin Payne - Raps<br>Daniel Gensel - Artiphon<br>Gabriel Tiburcio - Guitar<br>Rambush - Rhodes<br>Tony Domenico - Sunvox<br>rika - singing<br>JohnDavid Kagawa - Synth<br>Austin Amberg - Synth<br>Cover art by Taras Tymoshenko",
-      "bandcamp": "https://theinvisiblesundial.bandcamp.com/album/all-winters-wish",
-      "spotify": "https://open.spotify.com/album/1yv5A2aSrRgK8fsGRlH4A9",
-      "type": "EP"
     }
   ]
 }
