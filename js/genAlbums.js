@@ -6,7 +6,6 @@ fetch("albums.json")
   .then(function (json) {
     json.albums.sort((a, b) => (a.date > b.date ? 1 : -1));
     jsonSaved = json;
-
     toInput += "<h1>Albums</h2>";
     //albums
     for (let i = 0; i < json.albums.length; i++) {
@@ -14,7 +13,6 @@ fetch("albums.json")
         toInput += `<div class="albumBox"><div class="yearBox">${json.albums[i].date} -</div><div class="infoBox"><img onclick="albumSelect(${i})" src="img/albums/${json.albums[i].art}"></div></div>`;
       }
     }
-
     //eps
     toInput += "<h1>EPs</h2>";
     for (let i = 0; i < json.albums.length; i++) {
@@ -29,9 +27,7 @@ function albumSelect(albumChosen) {
   let bigBox = document.getElementById("infoHere");
   let album = jsonSaved.albums[albumChosen];
   let tracklist = "";
-
   album.tracks.map((i) => (tracklist += `<li>${i}</li>`));
-
   bigBox.innerHTML = "";
   bigBox.innerHTML = `<img src="img/albums/${album.art}" alt="${album.title}">
     <h1>${album.title}</h1>
