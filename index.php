@@ -30,9 +30,8 @@
       <div id="topWrap">
         <nav>
           <a href="#blog">news</a>
-          <a href="#albums">discography</a>
-          <!-- <a href="#aboutUs">about us</a> -->
           <a href="#calendar">calendar</a>
+          <a href="#albums">discography</a>
           <!-- <a href="#merch">merch</a> -->
         </nav>
       </div>
@@ -63,20 +62,20 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
   </div>
 </div>
 
-<div id="albums" class="section">
-  <div class="sectionWrap theAlbums">
-    <h1><span>discography</span></h1>
-    <div id="albumsHere"></div><div id="infoHere">
-    fff
-    </div>
-    <script src="js/genAlbums.js"></script>
-</div>
-</div>
-
 <div id="calendar" class="section">
   <div class="sectionWrap">
     <h1><span>calendar</span></h1>
 [MEC id="23"]
   </div>
+</div>
+
+<div id="albums" class="section">
+  <div class="sectionWrap theAlbums">
+    <h1><span>discography</span></h1>
+    <noscript>javascript needed to load discography</noscript>
+    <div id="albumsHere"></div><div id="infoHere">
+    </div>
+    <script src="js/genAlbums.js"></script>
+</div>
 </div>
 <?php include './footer.php'?>

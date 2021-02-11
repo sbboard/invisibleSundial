@@ -1,25 +1,42 @@
 let albumBox = document.getElementById("albumsHere");
 let toInput = "";
+let jsonSaved;
 fetch("albums.json")
   .then((response) => response.json())
   .then(function (json) {
+    json.albums.sort((a, b) => (a.date > b.date ? 1 : -1));
+    jsonSaved = json;
+
+    toInput += "<h1>Albums</h2>";
+    //albums
     for (let i = 0; i < json.albums.length; i++) {
-      if (json.albums[i].date != "") {
-        toInput += `<div class="albumBox"><div class="yearBox">${json.albums[i].date} -</div><div class="infoBox"><a href="album.php?album=1"><img src="img/albums/${json.albums[i].art}"></a></div></div>`;
+      if (json.albums[i].type == "album") {
+        toInput += `<div class="albumBox"><div class="yearBox">${json.albums[i].date} -</div><div class="infoBox"><img onclick="albumSelect(${i})" src="img/albums/${json.albums[i].art}"></div></div>`;
+      }
+    }
+
+    //eps
+    toInput += "<h1>EPs</h2>";
+    for (let i = 0; i < json.albums.length; i++) {
+      if (json.albums[i].type == "EP") {
+        toInput += `<div class="albumBox"><div class="yearBox">${json.albums[i].date} -</div><div class="infoBox"><img onclick="albumSelect(${i})" src="img/albums/${json.albums[i].art}"></div></div>`;
       }
     }
     albumBox.innerHTML = toInput;
   });
-{
-  /* <h4>Albums</h4>
-<div class="albumBox">
-  <div class="albumWrap"><a href="#"><img src="img/albums/open1.jpg"></a></div>
-  <div class="albumWrap"><a href="#"><img src="img/albums/open2.jpg"></a></div>
-  <div class="albumWrap"><a href="#"><img src="img/albums/open4.jpg"></a></div>
-</div>
-<h4>EPs</h4>
-<div class="albumBox">
-  <div class="albumWrap"><a href="#"><img src="img/albums/open3.jpg"></a></div>
-  <div class="albumWrap"><a href="#"><img src="img/albums/open5.jpg"></a></div>
-</div> */
+
+function albumSelect(albumChosen) {
+  let bigBox = document.getElementById("infoHere");
+  let album = jsonSaved.albums[albumChosen];
+  let tracklist = "";
+
+  album.tracks.map((i) => (tracklist += `<li>${i}</li>`));
+
+  bigBox.innerHTML = "";
+  bigBox.innerHTML = `<img src="img/albums/${album.art}" alt="${album.title}">
+    <h1>${album.title}</h1>
+    <a href="${album.spotify}"><i class="fab fa-spotify"></i></a>
+    <a href="${album.bandcamp}"><i class="fab fa-bandcamp"></i></a>
+    <div id="trackListing"><ol>${tracklist}</ol></div>
+    <div id="credits">${album.credits}</div>`;
 }

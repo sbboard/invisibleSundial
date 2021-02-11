@@ -320,13 +320,13 @@ body {
         max-width: initial;
         width: auto;
         margin: 10px;
-        transition: height 0.5s, width 0.5s, margin 0.5s; }
+        transition: height 0.5s, width 0.5s, margin 0.5s;
+        cursor: pointer; }
         #albumsHere .albumBox .infoBox img:hover {
           margin: 0;
           height: 150px; }
 
 #infoHere {
-  background-color: green;
   display: inline-block;
   width: calc(100% - 228px);
   position: absolute; }
