@@ -29,10 +29,21 @@ function albumSelect(albumChosen) {
   let tracklist = "";
   album.tracks.map((i) => (tracklist += `<li>${i}</li>`));
   bigBox.innerHTML = "";
-  bigBox.innerHTML = `<img src="img/albums/${album.art}" alt="${album.title}">
-    <h1>${album.title}</h1>
-    <a href="${album.spotify}"><i class="fab fa-spotify"></i></a>
-    <a href="${album.bandcamp}"><i class="fab fa-bandcamp"></i></a>
-    <div id="trackListing"><ol>${tracklist}</ol></div>
+  if (album.altArt.length > 0) {
+    bigBox.innerHTML += `<img src="img/albums/${album.altArt}" alt="${album.title}"></img>`;
+  } else {
+    bigBox.innerHTML += `<img src="img/albums/${album.art}" alt="${album.title}"></img>`;
+  }
+  bigBox.innerHTML += `<h1>${album.title}</h1>`;
+  if (album.spotify.length > 0) {
+    bigBox.innerHTML += `<a href="${album.spotify}"><i class="fab fa-spotify"></i></a>`;
+  }
+  if (album.bandcamp.length > 0) {
+    bigBox.innerHTML += `<a href="${album.bandcamp}"><i class="fab fa-bandcamp"></i></a>`;
+  }
+  if (album.externalURL.length > 0) {
+    bigBox.innerHTML += `<a href="${album.externalURL}"><i class="far fa-window-restore"></i></a>`;
+  }
+  bigBox.innerHTML += `<div id="trackListing"><ol>${tracklist}</ol></div>
     <div id="credits">${album.credits}</div>`;
 }
