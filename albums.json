@@ -48,13 +48,14 @@
       "credits": "Davin Payne - Raps<br>Daniel Gensel - Artiphon<br>Gabriel Tiburcio - Guitar<br>Rambush - Rhodes<br>Tony Domenico - Sunvox<br>rika - singing<br>JohnDavid Kagawa - Synth<br>Austin Amberg - Synth<br>Cover art by Taras Tymoshenko",
       "bandcamp": "https://theinvisiblesundial.bandcamp.com/album/all-winters-wish",
       "spotify": "https://open.spotify.com/album/1yv5A2aSrRgK8fsGRlH4A9",
+      "externalURL":"",
       "type": "EP"
     },
     {
       "title": "Two Ceramic Lions",
       "date": "2016",
       "art": "open2.jpg",
-      "altArt": "test.jpg",
+      "altArt": "",
       "tracks": [
         "hotshot debutante",
         "revenge of the h train",
@@ -109,7 +110,7 @@
       "credits": "",
       "bandcamp": "https://theinvisiblesundial.bandcamp.com/album/one-seed-one-crown",
       "spotify": "https://open.spotify.com/album/61hUdban6otQ9xWEe1OIVA",
-      "externalURL":"https://www.google.com/",
+      "externalURL":"",
       "type": "album"
     }
   ]

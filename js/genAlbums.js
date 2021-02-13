@@ -24,26 +24,27 @@ fetch("albums.json")
   });
 
 function albumSelect(albumChosen) {
-  let bigBox = document.getElementById("infoHere");
+  let bigBox = "";
   let album = jsonSaved.albums[albumChosen];
   let tracklist = "";
   album.tracks.map((i) => (tracklist += `<li>${i}</li>`));
-  bigBox.innerHTML = "";
+  document.getElementById("infoHere").innerHTML = "";
   if (album.altArt.length > 0) {
-    bigBox.innerHTML += `<img src="img/albums/${album.altArt}" alt="${album.title}"></img>`;
+    bigBox += `<img src="img/albums/${album.altArt}" alt="${album.title}"></img>`;
   } else {
-    bigBox.innerHTML += `<img src="img/albums/${album.art}" alt="${album.title}"></img>`;
+    bigBox += `<img src="img/albums/${album.art}" alt="${album.title}"></img>`;
   }
-  bigBox.innerHTML += `<h1>${album.title}</h1>`;
+  bigBox += `<h1>${album.title}</h1><div id="socLinks">`;
   if (album.spotify.length > 0) {
-    bigBox.innerHTML += `<a href="${album.spotify}"><i class="fab fa-spotify"></i></a>`;
+    bigBox += `<a href="${album.spotify}"><i class="fab fa-spotify"></i></a>`;
   }
   if (album.bandcamp.length > 0) {
-    bigBox.innerHTML += `<a href="${album.bandcamp}"><i class="fab fa-bandcamp"></i></a>`;
+    bigBox += `<a href="${album.bandcamp}"><i class="fab fa-bandcamp"></i></a>`;
   }
   if (album.externalURL.length > 0) {
-    bigBox.innerHTML += `<a href="${album.externalURL}"><i class="far fa-window-restore"></i></a>`;
+    bigBox += `<a href="${album.externalURL}"><i class="far fa-window-restore"></i></a>`;
   }
-  bigBox.innerHTML += `<div id="trackListing"><ol>${tracklist}</ol></div>
+  bigBox += `</div><div id="trackListing"><ol>${tracklist}</ol></div>
     <div id="credits">${album.credits}</div>`;
+  document.getElementById("infoHere").innerHTML = bigBox;
 }
