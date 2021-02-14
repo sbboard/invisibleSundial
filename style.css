@@ -216,13 +216,7 @@ body {
       color: white;
       text-decoration: none; }
       body nav a:hover {
-        font-family: fuzzyH;
-        background-color: black;
-        padding: 0em 0.25em 0em 0em;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        z-index: 5000; }
+        font-family: fuzzyH; }
     body nav #secret {
       font-family: fuzzyH;
       position: absolute !important;

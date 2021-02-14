@@ -29,6 +29,7 @@
 <div id="topBox">
       <div id="topWrap">
         <nav>
+          <div id="secret">this is to preload fuzzyH lol</div>
           <a href="#blog">news</a>
           <a href="#calendar">calendar</a>
           <a href="#albums">discography</a>
