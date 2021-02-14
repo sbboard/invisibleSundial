@@ -25,7 +25,7 @@ function roll() {
     }
     hologram.style.bottom =
       Math.floor(Math.random() * (docHeight - 195)) + 95 + "px";
-    hologram.onclick = clickHologram
+    hologram.onclick = clickHologram;
     side.appendChild(hologram);
     setTimeout(function () {
       side.removeChild(hologram);
@@ -33,8 +33,8 @@ function roll() {
   }
 }
 
-function clickHologram(){
-  changeMusic('hologram');
+function clickHologram() {
+  changeMusic("hologram");
 }
 
 setInterval(roll, 1000);
