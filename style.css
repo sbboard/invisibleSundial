@@ -365,4 +365,33 @@ body {
   display: inline-block;
   vertical-align: top; }
 
+#overflows, #leftOverflow, #rightOverflow {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  width: calc((100vw - 1000px - 2em)/2); }
+  #overflows img, #leftOverflow img, #rightOverflow img {
+    width: 125px;
+    position: absolute;
+    animation: hologram 10s; }
+
+#leftOverflow {
+  left: 0; }
+
+#rightOverflow {
+  right: 0; }
+
+@keyframes hologram {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0.7; }
+  50% {
+    opacity: 0.5; }
+  90% {
+    opacity: 0.7; }
+  100% {
+    opacity: 0; } }
+
 /*# sourceMappingURL=style.css.map */

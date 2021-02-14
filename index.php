@@ -75,7 +75,7 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
     <noscript>javascript needed to load discography</noscript>
     <div id="albumsHere"></div><div id="infoHere">
     </div>
-    <script src="js/genAlbums.js"></script>
+    <script src="./js/genAlbums.js"></script>
 </div>
 </div>
 <?php include './footer.php'?>

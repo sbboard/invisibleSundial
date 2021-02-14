@@ -380,3 +380,31 @@ $boxHeight: 150px
     @extend #bottomInfo
 #credits
     @extend #bottomInfo
+#overflows
+    height: 100vh
+    position: fixed
+    top: 0
+    z-index: 200
+    width: calc((100vw - 1000px - 2em)/2)
+    img
+        width: 125px
+        position: absolute
+        //filter: sepia(1) hue-rotate(154deg)
+        animation: hologram 10s
+#leftOverflow
+    @extend #overflows
+    left: 0
+#rightOverflow
+    @extend #overflows
+    right: 0
+@keyframes hologram
+    0%
+        opacity: 0
+    10%
+        opacity: .7
+    50%
+        opacity: .5
+    90%
+        opacity: .7
+    100%
+        opacity: 0

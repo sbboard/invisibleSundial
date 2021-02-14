@@ -19,5 +19,32 @@
 	  </style>
   </head>
 	  <body>
-    <audio id="mainTrack" src="./mp3/crazy-santa.mp3" volume=".2" autoplay loop></audio>
-    <audio id="secretTrack" src="./mp3/creed.mp3" preload volume=".2" loop></audio>
+    <audio id="mainTrack" src="./mp3/crazy-santa.mp3" volume=".2" autoplay onended="mainEnd()"></audio>
+    <audio id="secretTrack" src="./mp3/Luigi41.wav" preload volume=".2" onended="secretEnd()"></audio>
+    <audio id="rabbitTrack" src="./mp3/Bowser18.wav" preload volume=".2" onended="secretEnd()"></audio>
+    <script>
+    let mainTrack = document.getElementById("mainTrack")
+      function changeMusic(trackToPlay){
+        document.getElement
+        if(trackToPlay == 'rabbit'){
+          mainTrack.pause()
+          document.getElementById("rabbitTrack").play()
+        }
+        else if(trackToPlay == 'hologram'){
+          mainTrack.pause()
+          document.getElementById("secretTrack").play()
+        }
+      }
+
+      function secretEnd(){
+        mainTrack.play()
+      }
+
+      function mainEnd(){
+        mainTrack.currentTime = 0
+        mainTrack.play()
+      }
+    </script>
+    <div id="leftOverflow"></div>
+    <div id="rightOverflow"></div>
+    <script src="./js/overflow.js"></script>

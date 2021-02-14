@@ -2,6 +2,7 @@
       <div id="rabbit_holder">
       <img
         src="img/rabbit.gif"
+        onclick="changeMusic('rabbit')"
         onmouseover="var rh = document.getElementById('rabbit_holder'); rh.style['text-align'] = ( rh.style['text-align'] == 'right' ? 'left' : 'right' );"
       />
       </div>
