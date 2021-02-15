@@ -66,7 +66,8 @@ input {
 
 html {
   scroll-behavior: smooth;
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 body {
   color: white;
@@ -366,7 +367,6 @@ body {
   z-index: 200;
   width: calc((100vw - 1000px - 2em)/2); }
   #overflows img, #leftOverflow img, #rightOverflow img {
-    width: 125px;
     position: absolute;
     animation: hologram 10s; }
 
@@ -378,14 +378,39 @@ body {
 
 @keyframes hologram {
   0% {
-    opacity: 0; }
+    opacity: 0.7;
+    height: 200px;
+    width: 0px;
+    margin: 0 62.5px; }
+  2% {
+    opacity: 0.4;
+    width: 125px;
+    height: 125px;
+    margin: 0; }
   10% {
-    opacity: 0.7; }
+    opacity: 0.7;
+    width: 125px;
+    height: 125px;
+    margin: 0; }
   50% {
-    opacity: 0.5; }
+    opacity: 0.4;
+    width: 125px;
+    height: 125px;
+    margin: 0; }
   90% {
-    opacity: 0.7; }
+    opacity: 0.7;
+    width: 125px;
+    height: 125px;
+    margin: 0; }
+  98% {
+    opacity: 0.4;
+    width: 125px;
+    height: 125px;
+    margin: 0; }
   100% {
-    opacity: 0; } }
+    opacity: 0.7;
+    height: 200px;
+    width: 0px;
+    margin: 0 62.5px; } }
 
 /*# sourceMappingURL=style.css.map */

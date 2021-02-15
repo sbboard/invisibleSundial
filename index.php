@@ -54,7 +54,7 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
   </div>
 </div> -->
 
-<div id="blog" class="section">
+<div id="blog" class="section" data-aos="fade-up">
   <div class="sectionWrap">
     <h1><span>news</span></h1>
     
@@ -63,14 +63,14 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
   </div>
 </div>
 
-<div id="calendar" class="section">
+<div id="calendar" class="section" data-aos="fade-up">
   <div class="sectionWrap">
     <h1><span>calendar</span></h1>
 [MEC id="23"]
   </div>
 </div>
 
-<div id="albums" class="section">
+<div id="albums" class="section" data-aos="fade-up">
   <div class="sectionWrap theAlbums">
     <h1><span>discography</span></h1>
     <noscript>javascript needed to load discography</noscript>

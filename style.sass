@@ -75,6 +75,7 @@ $siteWidth: 1000px
 html
     scroll-behavior: smooth
     background-color: black
+    overflow-x: hidden
 body
     color: white
     font-family: 'Roboto', sans-serif
@@ -381,7 +382,6 @@ $boxHeight: 150px
     z-index: 200
     width: calc((100vw - 1000px - 2em)/2)
     img
-        width: 125px
         position: absolute
         //filter: sepia(1) hue-rotate(154deg)
         animation: hologram 10s
@@ -393,12 +393,37 @@ $boxHeight: 150px
     right: 0
 @keyframes hologram
     0%
-        opacity: 0
+        opacity: .7
+        height: 200px
+        width: 0px
+        margin: 0 (125px/2)
+    2%
+        opacity: .4
+        width: 125px
+        height: 125px
+        margin: 0
     10%
         opacity: .7
+        width: 125px
+        height: 125px
+        margin: 0
     50%
-        opacity: .5
+        opacity: .4
+        width: 125px
+        height: 125px
+        margin: 0
     90%
         opacity: .7
+        width: 125px
+        height: 125px
+        margin: 0
+    98%
+        opacity: .4
+        width: 125px
+        height: 125px
+        margin: 0
     100%
-        opacity: 0
+        opacity: .7
+        height: 200px
+        width: 0px
+        margin: 0 (125px/2)

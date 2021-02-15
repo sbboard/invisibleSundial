@@ -8,10 +8,10 @@
       rel="stylesheet"
       href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
-    <script src="js/p5.min.js"></script>
-    <script src="js/p5.sound.min.js"></script>
     <link rel="stylesheet" href="<?php //echo get_bloginfo('template_directory'); echo "/css/";?>style.css">
 	  <?php //wp_head(); ?>
 	 <style>
@@ -19,6 +19,9 @@
 	  </style>
   </head>
 	  <body>
+    <script>
+  AOS.init();
+</script>
     <audio id="mainTrack" src="./mp3/crazy-santa.mp3" volume=".2" autoplay onended="mainEnd()"></audio>
     <audio id="secretTrack" src="./mp3/Luigi41.wav" preload volume=".2" onended="secretEnd()"></audio>
     <audio id="rabbitTrack" src="./mp3/Bowser18.wav" preload volume=".2" onended="secretEnd()"></audio>
@@ -48,3 +51,4 @@
     <div id="leftOverflow"></div>
     <div id="rightOverflow"></div>
     <script src="./js/overflow.js"></script>
+    
