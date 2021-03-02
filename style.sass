@@ -69,6 +69,8 @@ $siteWidth: 1000px
     background-color: black
     padding: 2em 0
     width: 100%
+    @include mobile
+        display: none
     #topWrap
         width: fit-content
         margin: 0 auto
@@ -305,23 +307,26 @@ body
 $boxHeight: 150px
 
 #albumsHere
-    width: 228px
+    width: 25%
     display: inline-block
+    max-height: 750px
+    overflow-y: auto
+    overflow-x: hidden
+    float: left
     h1
         margin-bottom: 0
         filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan)
         margin: 0
         padding: 0
-        margin-left: 1.25em
     .albumBox
         position: relative
         &:last-of-type
             .infoBox
                 padding: 0 0 0 1em
         .yearBox
-            height: $boxHeight
             position: absolute
             top: 0
+            bottom: 0
             align-items: center
             display: flex
         .infoBox
@@ -331,22 +336,23 @@ $boxHeight: 150px
             margin-left: 2.75em
             img
                 display: inline-block
-                height: $boxHeight - 20px
-                max-width: initial
-                width: auto
                 margin: 10px
                 transition: height .5s, width .5s, margin .5s
                 cursor: pointer
+                width: 75%
+                max-width: inherit
+                height: auto
                 &:hover
                     margin: 0
-                    height: $boxHeight
+                    width: calc(75% + 20px)
 #infoHere
     display: inline-block
-    width: calc(100% - 228px)
-    position: absolute
+    width: calc(75% - 1em)
+    margin-left: 1em
+    min-height: 750px
     img
         max-width: 100%
-        height: 400px
+        max-height: 400px
     h1
         margin-bottom: 0
         margin-top: .25em

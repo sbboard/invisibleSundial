@@ -1,0 +1,587 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Invisible Sundial</title>
+    <link
+      rel="stylesheet"
+      href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
+	  <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/theinvisiblesundial.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='mec-select2-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.min.css?ver=5.16.6' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-font-icons-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/css/iconfonts.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-frontend-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/css/frontend.min.css?ver=5.16.6' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-tooltip-shadow-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltipster-sideTip-shadow.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-featherlight-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-google-fonts-css'  href='//fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CRoboto%3A100%2C300%2C400%2C700&#038;ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mec-dynamic-styles-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/css/dyncss.css?ver=5.6.2' type='text/css' media='all' />
+<style id='mec-dynamic-styles-inline-css' type='text/css'>
+.mec-event-grid-minimal .mec-modal-booking-button:hover, .mec-events-timeline-wrap .mec-organizer-item a, .mec-events-timeline-wrap .mec-organizer-item:after, .mec-events-timeline-wrap .mec-shortcode-organizers i, .mec-timeline-event .mec-modal-booking-button, .mec-wrap .mec-map-lightbox-wp.mec-event-list-classic .mec-event-date, .mec-timetable-t2-col .mec-modal-booking-button:hover, .mec-event-container-classic .mec-modal-booking-button:hover, .mec-calendar-events-side .mec-modal-booking-button:hover, .mec-event-grid-yearly  .mec-modal-booking-button, .mec-events-agenda .mec-modal-booking-button, .mec-event-grid-simple .mec-modal-booking-button, .mec-event-list-minimal  .mec-modal-booking-button:hover, .mec-timeline-month-divider,  .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic .mec-selected-day,.mec-wrap.colorskin-custom .mec-color, .mec-wrap.colorskin-custom .mec-event-sharing-wrap .mec-event-sharing > li:hover a, .mec-wrap.colorskin-custom .mec-color-hover:hover, .mec-wrap.colorskin-custom .mec-color-before *:before ,.mec-wrap.colorskin-custom .mec-widget .mec-event-grid-classic.owl-carousel .owl-nav i,.mec-wrap.colorskin-custom .mec-event-list-classic a.magicmore:hover,.mec-wrap.colorskin-custom .mec-event-grid-simple:hover .mec-event-title,.mec-wrap.colorskin-custom .mec-single-event .mec-event-meta dd.mec-events-event-categories:before,.mec-wrap.colorskin-custom .mec-single-event-date:before,.mec-wrap.colorskin-custom .mec-single-event-time:before,.mec-wrap.colorskin-custom .mec-events-meta-group.mec-events-meta-group-venue:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month i,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-previous-month:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-side .mec-next-month:hover,.mec-wrap.colorskin-custom .mec-calendar.mec-event-calendar-classic dt.mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-infowindow-wp h5 a:hover, .colorskin-custom .mec-events-meta-group-countdown .mec-end-counts h3,.mec-calendar .mec-calendar-side .mec-next-month i,.mec-wrap .mec-totalcal-box i,.mec-calendar .mec-event-article .mec-event-title a:hover,.mec-attendees-list-details .mec-attendee-profile-link a:hover,.mec-wrap.colorskin-custom .mec-next-event-details li i, .mec-next-event-details i:before, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-next-event-details a,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected,.lity .mec-color,.lity .mec-color-before :before,.lity .mec-color-hover:hover,.lity .mec-wrap .mec-color,.lity .mec-wrap .mec-color-before :before,.lity .mec-wrap .mec-color-hover:hover,.leaflet-popup-content .mec-color,.leaflet-popup-content .mec-color-before :before,.leaflet-popup-content .mec-color-hover:hover,.leaflet-popup-content .mec-wrap .mec-color,.leaflet-popup-content .mec-wrap .mec-color-before :before,.leaflet-popup-content .mec-wrap .mec-color-hover:hover, .mec-calendar.mec-calendar-daily .mec-calendar-d-table .mec-daily-view-day.mec-daily-view-day-active.mec-color, .mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail i,.mec-map-boxshow div .mec-map-view-event-detail.mec-event-detail:hover,.mec-map-boxshow .mec-color,.mec-map-boxshow .mec-color-before :before,.mec-map-boxshow .mec-color-hover:hover,.mec-map-boxshow .mec-wrap .mec-color,.mec-map-boxshow .mec-wrap .mec-color-before :before,.mec-map-boxshow .mec-wrap .mec-color-hover:hover, .mec-choosen-time-message, .mec-booking-calendar-month-navigation .mec-next-month:hover, .mec-booking-calendar-month-navigation .mec-previous-month:hover{color: #e64883}.mec-skin-carousel-container .mec-event-footer-carousel-type3 .mec-modal-booking-button:hover, .mec-wrap.colorskin-custom .mec-event-sharing .mec-event-share:hover .event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-grid-clean .mec-event-date,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing li:hover a i,.mec-wrap.colorskin-custom .mec-calendar:not(.mec-event-calendar-classic) .mec-selected-day,.mec-wrap.colorskin-custom .mec-calendar .mec-selected-day:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-row  dt.mec-has-event:hover,.mec-wrap.colorskin-custom .mec-calendar .mec-has-event:after, .mec-wrap.colorskin-custom .mec-bg-color, .mec-wrap.colorskin-custom .mec-bg-color-hover:hover, .colorskin-custom .mec-event-sharing-wrap:hover > li, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .flip-clock-wrapper ul li a div div.inn,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel,.mec-event-countdown-style3 .mec-event-date,#wrap .mec-wrap article.mec-event-countdown-style1,.mec-event-countdown-style1 .mec-event-countdown-part3 a.mec-event-button,.mec-wrap .mec-event-countdown-style2,.mec-map-get-direction-btn-cnt input[type="submit"],.mec-booking button,span.mec-marker-wrap,.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:before, .mec-has-event-for-booking.mec-active .mec-calendar-novel-selected-day, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover, .mec-ongoing-normal-label{background-color: #e64883;}.mec-skin-carousel-container .mec-event-footer-carousel-type3 .mec-modal-booking-button:hover, .mec-timeline-month-divider, .mec-wrap.colorskin-custom .mec-single-event .mec-speakers-details ul li .mec-speaker-avatar a:hover img,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing > li:hover a i,.mec-wrap.colorskin-custom .mec-event-list-modern .mec-event-sharing .mec-event-share:hover .mec-event-sharing-icon,.mec-wrap.colorskin-custom .mec-event-list-standard .mec-month-divider span:before,.mec-wrap.colorskin-custom .mec-single-event .mec-social-single:before,.mec-wrap.colorskin-custom .mec-single-event .mec-frontbox-title:before,.mec-wrap.colorskin-custom .mec-calendar .mec-calendar-events-side .mec-table-side-day, .mec-wrap.colorskin-custom .mec-border-color, .mec-wrap.colorskin-custom .mec-border-color-hover:hover, .colorskin-custom .mec-single-event .mec-frontbox-title:before, .colorskin-custom .mec-single-event .mec-events-meta-group-booking form > h4:before, .mec-wrap.colorskin-custom .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.mec-wrap .mec-totalcal-box .mec-totalcal-view span.mec-totalcalview-selected,.event-carousel-type1-head .mec-event-date-carousel:after,.mec-wrap.colorskin-custom .mec-events-masonry-cats a.mec-masonry-cat-selected, .mec-marker-infowindow-wp .mec-marker-infowindow-count, .mec-wrap.colorskin-custom .mec-events-masonry-cats a:hover, .mec-has-event-for-booking .mec-calendar-novel-selected-day, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date.mec-active, .mec-booking-tooltip.multiple-time .mec-booking-calendar-date:hover{border-color: #e64883;}.mec-wrap.colorskin-custom .mec-event-countdown-style3 .mec-event-date:after,.mec-wrap.colorskin-custom .mec-month-divider span:before{border-bottom-color:#e64883;}.mec-wrap.colorskin-custom  article.mec-event-countdown-style1 .mec-event-countdown-part2:after{border-color: transparent transparent transparent #e64883;}.mec-wrap.colorskin-custom .mec-box-shadow-color { box-shadow: 0 4px 22px -7px #e64883;}.mec-events-timeline-wrap .mec-shortcode-organizers, .mec-timeline-event .mec-modal-booking-button, .mec-events-timeline-wrap:before, .mec-wrap.colorskin-custom .mec-timeline-event-local-time, .mec-wrap.colorskin-custom .mec-timeline-event-time ,.mec-wrap.colorskin-custom .mec-timeline-event-location,.mec-choosen-time-message { background: rgba(230,72,131,.11);}.mec-wrap.colorskin-custom .mec-timeline-events-container .mec-timeline-event-date:after { background: rgba(230,72,131,.3);}
+</style>
+<link rel='stylesheet' id='mec-lity-style-css'  href='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.css?ver=5.6.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://theinvisiblesundial.com/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='mec-frontend-script-js-extra'>
+/* <![CDATA[ */
+var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"http:\/\/theinvisiblesundial.com\/wp-admin\/admin-ajax.php","fes_nonce":"1ae9a651db","current_year":"2021","current_month":"02","datepicker_format":"yy-mm-dd&Y-m-d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js?ver=5.16.6' id='mec-frontend-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/js/events.js?ver=5.16.6' id='mec-events-script-js'></script>
+<link rel="https://api.w.org/" href="http://theinvisiblesundial.com/index.php?rest_route=/" /><link rel="alternate" type="application/json" href="http://theinvisiblesundial.com/index.php?rest_route=/wp/v2/pages/10" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://theinvisiblesundial.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://theinvisiblesundial.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.6.2" />
+<link rel="canonical" href="http://theinvisiblesundial.com/" />
+<link rel='shortlink' href='http://theinvisiblesundial.com/' />
+<link rel="alternate" type="application/json+oembed" href="http://theinvisiblesundial.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Ftheinvisiblesundial.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://theinvisiblesundial.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Ftheinvisiblesundial.com%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- Dojo Digital Hide Title -->
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+
+		if( $('.entry-title').length != 0 ) {
+			$('.entry-title span.dojodigital_toggle_title').parents('.entry-title:first').hide();
+		} else {
+			$('h1 span.dojodigital_toggle_title').parents('h1:first').hide();
+			$('h2 span.dojodigital_toggle_title').parents('h2:first').hide();
+		}
+
+	});
+</script>
+<noscript><style type="text/css"> .entry-title { display:none !important; }</style></noscript>
+<style type="text/css"> body.dojo-hide-title .entry-title { display:none !important; }</style>
+<!-- END Dojo Digital Hide Title -->
+
+			<style type="text/css">.event-color{display:none;}
+.mec-totalcal-box{display:none;}
+.mec-event-footer{display:none;}
+.mec-box-calendar{    border-radius: .5em;border:none;}
+.mec-calendar-topsec{background-color: rgba(0,0,0,.5);color: white;}
+.mec-calendar .mec-calendar-topsec{background: inherit;}
+.mec-calendar .mec-calendar-header h2{color:white;}
+.mec-wrap h6{color: white;}
+.mec-calendar .mec-event-article .mec-event-title a{color: white;}
+.mec-event-article:hover{background-color: inherit!important;}
+.mec-calendar-side .mec-calendar-table {min-height: 0px;}</style>	  
+    <link rel="stylesheet" href="/style.css">
+	 <style>
+		 body h1{background-color: inherit;}
+		 .dojodigital_toggle_title{display: none;}
+		 #overflows, #leftOverflow, #rightOverflow {
+    		height: calc(100vh - 95px)!important;
+		 }
+	  </style>
+  </head>
+	  <body>
+    <script>
+  AOS.init();
+</script>
+    <audio id="mainTrack" src="./mp3/website.mp3" volume=".2" autoplay onended="mainEnd()"></audio>
+    <audio id="secretTrack" src="./mp3/gif.mp3" preload volume=".2" onended="secretEnd()"></audio>
+    <audio id="rabbitTrack" src="./mp3/creed.mp3" preload volume=".2" onended="secretEnd()"></audio>
+    <script>
+    let mainTrack = document.getElementById("mainTrack")
+      function changeMusic(trackToPlay){
+        document.getElement
+        if(trackToPlay == 'rabbit'){
+          mainTrack.pause()
+          document.getElementById("secretTrack").pause()
+          document.getElementById("rabbitTrack").play()
+        }
+        else if(trackToPlay == 'hologram'){
+          mainTrack.pause()
+          document.getElementById("rabbitTrack").pause()
+          document.getElementById("secretTrack").play()
+        }
+      }
+
+      function secretEnd(){
+        mainTrack.play()
+      }
+
+      function mainEnd(){
+        mainTrack.currentTime = 0
+        mainTrack.play()
+      }
+    </script>
+    <div id="leftOverflow"></div>
+    <div id="rightOverflow"></div>
+    <script src="./js/overflow.js"></script>
+    
+	    
+	<h3><span class="dojodigital_toggle_title">Posts</span></h3>    <div id="splash" class="section">
+  <img src="img/logo.png" alt="band logo" />
+  <div id="socMedia">
+    <a href="https://twitter.com/nvisiblesundial"
+      ><i class="fab fa-twitter-square"></i
+    ></a>
+    <a href="https://www.twitch.tv/theinvisiblesundial"
+      ><i class="fab fa-twitch"></i
+    ></a>
+
+    <a href="https://www.twitch.tv/theinvisiblesundial"
+      ><i class="fab fa-youtube-square"></i
+    ></a>
+
+    <a href="https://open.spotify.com/artist/470lKesDAVt2EAqHABtNM5"
+      ><i class="fab fa-spotify"></i
+    ></a>
+    <a href="https://theinvisiblesundial.bandcamp.com/"
+      ><i class="fab fa-bandcamp"></i
+    ></a>
+    
+    <a href="https://www.patreon.com/theinvisiblesundial"
+      ><i class="fab fa-patreon"></i
+    ></a>
+  </div>
+</div>
+
+<div id="topBox">
+      <div id="topWrap">
+        <nav>
+          <div id="secret">this is to preload fuzzyH lol</div>
+          <a href="#blog">news</a>
+          <a href="#calendar">calendar</a>
+          <a href="#albums">discography</a>
+          <!-- <a href="#merch">merch</a> -->
+        </nav>
+      </div>
+    </div>
+
+    <!-- <div id="aboutUs" class="section">
+  <div class="sectionWrap">
+    <h1><span>about us</span></h1>
+    <p>The Invisible Sundial is a genre-fusing, instrumental solo project based off one bold premise: not everything which creates sound has to be a traditional instrument.</br></br>
+
+The brainchild of multi-instrumentalist Austin Amberg, The Invisible Sundial uses the whole spectrum of synthesis, exploring every angle to create bite-size tasters of sound - inviting the listener in for more. The Invisible Sundial aims to get the absolute most from their tools.</br></br>
+
+With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and more, The Invisible Sundial doesn’t sit squarely in one place – yet in doing so, manages to range to the lesser-explored regions of The Invisible Sundial’s influences, turning them into something new.
+</p>
+    <div id="fadeImg">
+      <img src="img/band2.JPG">
+      <img class="topImg" src="img/band1.JPG">
+    </div>
+  </div>
+</div> -->
+
+<div id="blog" class="section" data-aos="fade-up">
+  <div class="sectionWrap">
+    <h1><span>news</span></h1>
+    
+<ul class="display-posts-listing"><li class="listing-item"><a class="title" href="http://theinvisiblesundial.com/?p=1">This is it!</a> <span class="excerpt-dash">-</span> <span class="excerpt">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but [&hellip;]</span></li></ul>
+    
+  </div>
+</div>
+
+<div id="calendar" class="section" data-aos="fade-up">
+  <div class="sectionWrap">
+    <h1><span>calendar</span></h1>
+<div id="mec_skin_23" class="mec-wrap colorskin-custom  ">
+    
+    <div id="mec_search_form_23" class="mec-search-form mec-totalcal-box"><div class="mec-dropdown-wrap" ><div class="mec-dropdown-search">
+                    <i class="mec-sl-folder"></i><select  name=' ' id='mec_sf_category_23' class='postform' >
+	<option value='' selected='selected'>Category</option>
+</select>
+</div></div><div class="mec-text-input-search">
+                    <i class="mec-sl-magnifier"></i>
+                    <input type="search" value="" id="mec_sf_s_23" />
+                </div></div>    
+    <div class="mec-calendar mec-box-calendar">
+        <div class="mec-calendar-topsec">        <div class="mec-calendar-side mec-clear">
+                        <div class="mec-skin-monthly-view-month-navigator-container">
+                <div class="mec-month-navigator" id="mec_month_navigator_23_202102"><div class="mec-previous-month mec-load-month mec-previous-month" data-mec-year="2021" data-mec-month="01"><i class="mec-sl-angle-left"></i> January</div><div class="mec-calendar-header"><h2>February 2021</h2></div><div class="mec-next-month mec-load-month mec-next-month" data-mec-year="2021" data-mec-month="03">March <i class="mec-sl-angle-right"></i></div></div>
+            </div>
+            
+            <div class="mec-calendar-table" id="mec_skin_events_23">
+                <div class="mec-month-container mec-month-container-selected" id="mec_monthly_view_month_23_202102" data-month-id="202102"><dl class="mec-calendar-table-head"><dt class="mec-calendar-day-head">MO</dt><dt class="mec-calendar-day-head">TU</dt><dt class="mec-calendar-day-head">WE</dt><dt class="mec-calendar-day-head">TH</dt><dt class="mec-calendar-day-head">FR</dt><dt class="mec-calendar-day-head">SA</dt><dt class="mec-calendar-day-head">SU</dt></dl><dl class="mec-calendar-row">
+    <dt class="mec-calendar-day mec-has-event" data-mec-cell="20210201" data-day="1" data-month="202102"><a href="#" class="mec-has-event-a">1</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210202" data-day="2" data-month="202102">2</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210203" data-day="3" data-month="202102">3</dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210204" data-day="4" data-month="202102"><a href="#" class="mec-has-event-a">4</a></dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210205" data-day="5" data-month="202102"><a href="#" class="mec-has-event-a">5</a></dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210206" data-day="6" data-month="202102"><a href="#" class="mec-has-event-a">6</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210207" data-day="7" data-month="202102">7</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210208" data-day="8" data-month="202102"><a href="#" class="mec-has-event-a">8</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210209" data-day="9" data-month="202102">9</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210210" data-day="10" data-month="202102">10</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210211" data-day="11" data-month="202102">11</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210212" data-day="12" data-month="202102">12</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210213" data-day="13" data-month="202102">13</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210214" data-day="14" data-month="202102">14</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210215" data-day="15" data-month="202102"><a href="#" class="mec-has-event-a">15</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210216" data-day="16" data-month="202102">16</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210217" data-day="17" data-month="202102">17</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210218" data-day="18" data-month="202102">18</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210219" data-day="19" data-month="202102">19</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210220" data-day="20" data-month="202102">20</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210221" data-day="21" data-month="202102">21</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210222" data-day="22" data-month="202102"><a href="#" class="mec-has-event-a">22</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210223" data-day="23" data-month="202102">23</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210224" data-day="24" data-month="202102">24</dt></dt><dt class="mec-calendar-day mec-selected-day" data-mec-cell="20210225" data-day="25" data-month="202102">25</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210226" data-day="26" data-month="202102">26</dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210227" data-day="27" data-month="202102"><a href="#" class="mec-has-event-a">27</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210228" data-day="28" data-month="202102">28</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-table-nullday">1</dt><dt class="mec-table-nullday">2</dt><dt class="mec-table-nullday">3</dt><dt class="mec-table-nullday">4</dt><dt class="mec-table-nullday">5</dt><dt class="mec-table-nullday">6</dt><dt class="mec-table-nullday">7</dt></dl>
+</div>
+            </div>
+        </div>
+        <div class="mec-calendar-events-side mec-clear"><div class="mec-month-side" id="mec_month_side_23_202102"><div class="mec-calendar-events-sec" data-mec-cell="20210201" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 1st</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-01",
+            "endDate": "2021-02-01",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-01T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "Weekly on Mondays",
+            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" >Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210202" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 2nd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210203" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 3rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210204" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 4th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-04",
+            "endDate": "2021-02-06",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-04T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "One Time Multiple Day Event",
+            "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 12:00 am</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="17" href="http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event" >One Time Multiple Day Event</a><span class="event-color" style="background: #dd823b"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210205" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 5th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-05",
+            "endDate": "2021-02-06",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-05T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "One Time Multiple Day Event",
+            "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> All Day</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="17" href="http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event" >One Time Multiple Day Event</a><span class="event-color" style="background: #dd823b"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210206" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 6th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-06",
+            "endDate": "2021-02-06",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-06T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "One Time Multiple Day Event",
+            "url": "http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 12:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="17" href="http://theinvisiblesundial.com/?mec-events=one-time-multiple-day-event" >One Time Multiple Day Event</a><span class="event-color" style="background: #dd823b"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210207" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 7th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210208" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 8th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-08",
+            "endDate": "2021-02-08",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-08T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "Weekly on Mondays",
+            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" >Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210209" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 9th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210210" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 10th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210211" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 11th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210212" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 12th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210213" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 13th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210214" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 14th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210215" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 15th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-15",
+            "endDate": "2021-02-15",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-15T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "Weekly on Mondays",
+            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" >Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210216" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 16th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210217" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 17th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210218" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 18th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210219" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 19th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210220" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 20th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210221" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 21st</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210222" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 22nd</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-22",
+            "endDate": "2021-02-22",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-22T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "Weekly on Mondays",
+            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" >Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210223" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 23rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210224" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 24th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210225"  style="display: block;"><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 25th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210226" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 26th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210227" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 27th</h3>        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Event",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "startDate": "2021-02-27",
+            "endDate": "2021-02-27",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location":
+            {
+                "@type": "Place",
+                                "name": "",
+                "image": "",
+                "address": ""
+                            },
+            "organizer":
+            {
+                "@type": "Person",
+                "name": "",
+                "url": ""
+            },
+            "offers":
+            {
+                "url": "http://theinvisiblesundial.com/?mec-events=monthly-on-27th",
+                "price": "",
+                "priceCurrency": "$",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2021-02-27T00:00"
+            },
+            "performer": "",
+            "description": "",
+            "image": "",
+            "name": "Monthly on 27th",
+            "url": "http://theinvisiblesundial.com/?mec-events=monthly-on-27th"
+        }
+        </script>
+        <article data-style="" class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="20" href="http://theinvisiblesundial.com/?mec-events=monthly-on-27th" >Monthly on 27th</a><span class="event-color" style="background: #00a0d2"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210228" ><h6 class="mec-table-side-title">Events for February</h6><h3 class="mec-color mec-table-side-day"> 28th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div></div></div></div><div class="mec-event-footer"></div>    </div>
+    
+</div>
+  </div>
+</div>
+
+<div id="albums" class="section" data-aos="fade-up">
+  <div class="sectionWrap theAlbums">
+    <h1><span>discography</span></h1>
+    <noscript>javascript needed to load discography</noscript>
+    <div id="albumsHere"></div><div id="infoHere">
+    </div>
+    <script src="./js/genAlbums.js"></script>
+</div>
+</div>	
+<footer>
+      <div id="rabbit_holder">
+      <img
+        src="img/rabbit.gif"
+        onclick="changeMusic('rabbit')"
+        onmouseover="var rh = document.getElementById('rabbit_holder'); rh.style['text-align'] = ( rh.style['text-align'] == 'right' ? 'left' : 'right' );"
+      />
+      </div>
+      <div id="copyright">
+      &copy;
+      <span id="copywrite">
+          <script>document.getElementById('copywrite').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      The Invisible Sundial
+    </div>
+    </footer>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.12.1' id='jquery-ui-datepicker-js'></script>
+<script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/js/jquery.typewatch.js?ver=5.16.6' id='mec-typekit-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/featherlight/featherlight.js?ver=5.16.6' id='mec-featherlight-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/select2/select2.full.min.js?ver=5.16.6' id='mec-select2-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/tooltip/tooltip.js?ver=5.16.6' id='mec-tooltip-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/lity/lity.min.js?ver=5.16.6' id='mec-lity-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/colorbrightness/colorbrightness.min.js?ver=5.16.6' id='mec-colorbrightness-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/packages/owl-carousel/owl.carousel.min.js?ver=5.16.6' id='mec-owl-carousel-script-js'></script>
+<script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/wp-embed.min.js?ver=5.6.2' id='wp-embed-js'></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function()
+{
+    jQuery("#mec_monthly_view_month_23_202102").mecMonthlyView(
+    {
+        id: "23",
+        today: "20210225",
+        month_id: "202102",
+        active_month: {year: "2021", month: "02"},
+        next_month: {year: "2021", month: "03"},
+        events_label: "Events",
+        event_label: "Event",
+        month_navigator: 1,
+        atts: "atts%5Blabel%5D=&atts%5Bcategory%5D=&atts%5Blocation%5D=&atts%5Borganizer%5D=&atts%5Btag%5D=&atts%5Bauthor%5D=&atts%5Bskin%5D=monthly_view&atts%5Bshow_past_events%5D=1&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bstart_date_type%5D=start_current_month&atts%5Bsk-options%5D%5Bmonthly_view%5D%5Bnext_previous_button%5D=1&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Bcategory%5D%5Btype%5D=dropdown&atts%5Bsf-options%5D%5Bmonthly_view%5D%5Btext_search%5D%5Btype%5D=text_input&atts%5Bsf_status%5D=1&atts%5Bid%5D=23",
+        style: "",
+        ajax_url: "http://theinvisiblesundial.com/wp-admin/admin-ajax.php",
+        sed_method: "0",
+        image_popup: "0",
+        sf:
+        {
+            container: "#mec_search_form_23",
+        },
+    });
+});
+</script>
+  </body>
+</html>

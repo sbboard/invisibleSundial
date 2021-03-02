@@ -60,6 +60,9 @@ input {
   background-color: black;
   padding: 2em 0;
   width: 100%; }
+  @media (max-width: 500px) {
+    #topBox {
+      display: none; } }
   #topBox #topWrap {
     width: fit-content;
     margin: 0 auto; }
@@ -292,22 +295,25 @@ body {
     margin-top: 1em; }
 
 #albumsHere {
-  width: 228px;
-  display: inline-block; }
+  width: 25%;
+  display: inline-block;
+  max-height: 750px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  float: left; }
   #albumsHere h1 {
     margin-bottom: 0;
     filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
     margin: 0;
-    padding: 0;
-    margin-left: 1.25em; }
+    padding: 0; }
   #albumsHere .albumBox {
     position: relative; }
     #albumsHere .albumBox:last-of-type .infoBox {
       padding: 0 0 0 1em; }
     #albumsHere .albumBox .yearBox {
-      height: 150px;
       position: absolute;
       top: 0;
+      bottom: 0;
       align-items: center;
       display: flex; }
     #albumsHere .albumBox .infoBox {
@@ -317,23 +323,24 @@ body {
       margin-left: 2.75em; }
       #albumsHere .albumBox .infoBox img {
         display: inline-block;
-        height: 130px;
-        max-width: initial;
-        width: auto;
         margin: 10px;
         transition: height 0.5s, width 0.5s, margin 0.5s;
-        cursor: pointer; }
+        cursor: pointer;
+        width: 75%;
+        max-width: inherit;
+        height: auto; }
         #albumsHere .albumBox .infoBox img:hover {
           margin: 0;
-          height: 150px; }
+          width: calc(75% + 20px); }
 
 #infoHere {
   display: inline-block;
-  width: calc(100% - 228px);
-  position: absolute; }
+  width: calc(75% - 1em);
+  margin-left: 1em;
+  min-height: 750px; }
   #infoHere img {
     max-width: 100%;
-    height: 400px; }
+    max-height: 400px; }
   #infoHere h1 {
     margin-bottom: 0;
     margin-top: 0.25em;
