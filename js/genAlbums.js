@@ -34,7 +34,7 @@ function albumSelect(albumChosen) {
   } else {
     bigBox += `<img src="img/albums/${album.art}" alt="${album.title}"></img>`;
   }
-  bigBox += `<h1>${album.title}</h1><div id="socLinks">`;
+  bigBox += `<h1>${album.title} (${album.date})</h1><div id="socLinks">`;
   if (album.spotify.length > 0) {
     bigBox += `<a href="${album.spotify}"><i class="fab fa-spotify"></i></a>`;
   }

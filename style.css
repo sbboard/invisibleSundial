@@ -60,7 +60,7 @@ input {
   background-color: black;
   padding: 2em 0;
   width: 100%; }
-  @media (max-width: 500px) {
+  @media (max-width: 767px) {
     #topBox {
       display: none; } }
   #topBox #topWrap {
@@ -165,9 +165,10 @@ body {
     image-rendering: crisp-edges; }
     body #splash img {
       filter: invert(1) drop-shadow(4px 0px 0px red) drop-shadow(-4px 0px 0px cyan);
+      max-width: 500px;
       width: 500px;
       height: auto; }
-      @media (max-width: 500px) {
+      @media (max-width: 767px) {
         body #splash img {
           width: 90%; } }
     body #splash #rabbit_holder {
@@ -185,10 +186,12 @@ body {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      z-index: 50; }
-      @media (max-width: 500px) {
+      z-index: 50;
+      transition: font-size 0.5s; }
+      @media (max-width: 767px) {
         body #splash #socMedia {
           width: 90%;
+          max-width: 400px;
           font-size: 2.5em; } }
       body #splash #socMedia svg {
         color: white;
@@ -298,29 +301,74 @@ body {
   width: 25%;
   display: inline-block;
   max-height: 750px;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   float: left; }
+  @media (max-width: 767px) {
+    #albumsHere {
+      width: 100%;
+      float: none;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      position: relative;
+      height: 150px;
+      white-space: nowrap; }
+      #albumsHere::-webkit-scrollbar {
+        height: 2px;
+        width: initial; } }
+  #albumsHere::-webkit-scrollbar {
+    width: 2px; }
+  #albumsHere::-webkit-scrollbar-track {
+    background: white; }
+  #albumsHere::-webkit-scrollbar-thumb {
+    background: red; }
+  #albumsHere::-webkit-scrollbar-thumb:hover {
+    background: #990000; }
   #albumsHere h1 {
     margin-bottom: 0;
     filter: drop-shadow(2px 0px 0px red) drop-shadow(-2px 0px 0px cyan);
     margin: 0;
     padding: 0; }
+    @media (max-width: 767px) {
+      #albumsHere h1 {
+        display: inline-block;
+        transform: rotate(-90deg);
+        transform-origin: left;
+        width: 0.75em;
+        padding-right: -1em;
+        height: 0em;
+        margin-left: 0.5em;
+        vertical-align: text-top; } }
   #albumsHere .albumBox {
     position: relative; }
+    @media (max-width: 767px) {
+      #albumsHere .albumBox {
+        height: 100%;
+        display: inline-block;
+        padding: 0; } }
     #albumsHere .albumBox:last-of-type .infoBox {
-      padding: 0 0 0 1em; }
+      padding: 0; }
     #albumsHere .albumBox .yearBox {
       position: absolute;
       top: 0;
       bottom: 0;
       align-items: center;
       display: flex; }
+      @media (max-width: 767px) {
+        #albumsHere .albumBox .yearBox {
+          display: none; } }
     #albumsHere .albumBox .infoBox {
       display: inline-flex;
       border-left: 2px solid white;
-      padding: 0 0 1em 1em;
-      margin-left: 2.75em; }
+      padding: 0 0 1em 0em;
+      margin-left: 2.75em;
+      justify-content: center; }
+      @media (max-width: 767px) {
+        #albumsHere .albumBox .infoBox {
+          height: 100%;
+          padding: 0;
+          margin: 0 0 0 1em;
+          border: 0; } }
       #albumsHere .albumBox .infoBox img {
         display: inline-block;
         margin: 10px;
@@ -329,15 +377,29 @@ body {
         width: 75%;
         max-width: inherit;
         height: auto; }
+        @media (max-width: 767px) {
+          #albumsHere .albumBox .infoBox img {
+            margin: 0;
+            width: auto;
+            height: 100%; } }
         #albumsHere .albumBox .infoBox img:hover {
           margin: 0;
           width: calc(75% + 20px); }
+          @media (max-width: 767px) {
+            #albumsHere .albumBox .infoBox img:hover {
+              width: auto; } }
 
 #infoHere {
   display: inline-block;
   width: calc(75% - 1em);
   margin-left: 1em;
-  min-height: 750px; }
+  min-height: 750px;
+  transition: min-height 0.5s; }
+  @media (max-width: 767px) {
+    #infoHere {
+      width: 100%;
+      min-height: 500px;
+      margin-top: 1em; } }
   #infoHere img {
     max-width: 100%;
     max-height: 400px; }
@@ -362,10 +424,15 @@ body {
       color: white; }
 
 #bottomInfo, #trackListing, #credits {
-  width: calc(50% - 2em - 2px);
   margin: 1em 1em;
   display: inline-block;
   vertical-align: top; }
+
+#trackListing {
+  width: calc(40% - 2em - 2px); }
+
+#credits {
+  width: calc(60% - 2em - 2px); }
 
 #overflows, #leftOverflow, #rightOverflow {
   height: 100vh;
