@@ -496,14 +496,21 @@ $boxHeight: 150px
                 .listing-item
                     border-bottom: 1px solid white
                     padding: 1em 0
+                    &:last-of-type
+                        border-bottom: 0
                     .title
-                        font-size: 1.5em
+                        font-size: 1.25em
                         font-weight: 800
-                        display: block
+                        display: inline-block
                         text-decoration: none
                         color: white
                         text-transform: lowercase
+                        margin-bottom: .25em
                         &:visited
                             color: white
-                    .excerpt-dash
-                        display: none
+                    .date
+                        @extend .title
+                        float: right
+                    .content
+                        img
+                            margin: 1em auto

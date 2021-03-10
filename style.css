@@ -492,16 +492,21 @@ body {
   #blog .sectionWrap .display-posts-listing .listing-item {
     border-bottom: 1px solid white;
     padding: 1em 0; }
-    #blog .sectionWrap .display-posts-listing .listing-item .title {
-      font-size: 1.5em;
+    #blog .sectionWrap .display-posts-listing .listing-item:last-of-type {
+      border-bottom: 0; }
+    #blog .sectionWrap .display-posts-listing .listing-item .title, #blog .sectionWrap .display-posts-listing .listing-item .date {
+      font-size: 1.25em;
       font-weight: 800;
-      display: block;
+      display: inline-block;
       text-decoration: none;
       color: white;
-      text-transform: lowercase; }
-      #blog .sectionWrap .display-posts-listing .listing-item .title:visited {
+      text-transform: lowercase;
+      margin-bottom: 0.25em; }
+      #blog .sectionWrap .display-posts-listing .listing-item .title:visited, #blog .sectionWrap .display-posts-listing .listing-item .date:visited {
         color: white; }
-    #blog .sectionWrap .display-posts-listing .listing-item .excerpt-dash {
-      display: none; }
+    #blog .sectionWrap .display-posts-listing .listing-item .date {
+      float: right; }
+    #blog .sectionWrap .display-posts-listing .listing-item .content img {
+      margin: 1em auto; }
 
 /*# sourceMappingURL=style.css.map */
