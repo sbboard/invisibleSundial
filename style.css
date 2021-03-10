@@ -486,5 +486,22 @@ body {
     height: 200px;
     width: 0px;
     margin: 0 62.5px; } }
+#blog .sectionWrap .display-posts-listing {
+  padding: 0 1em;
+  background-color: rgba(0, 0, 0, 0.75); }
+  #blog .sectionWrap .display-posts-listing .listing-item {
+    border-bottom: 1px solid white;
+    padding: 1em 0; }
+    #blog .sectionWrap .display-posts-listing .listing-item .title {
+      font-size: 1.5em;
+      font-weight: 800;
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-transform: lowercase; }
+      #blog .sectionWrap .display-posts-listing .listing-item .title:visited {
+        color: white; }
+    #blog .sectionWrap .display-posts-listing .listing-item .excerpt-dash {
+      display: none; }
 
 /*# sourceMappingURL=style.css.map */
