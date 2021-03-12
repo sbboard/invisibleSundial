@@ -11,7 +11,7 @@ function roll() {
 
     //create element
     var hologram = document.createElement("IMG");
-    hologram.src = `./img/gifs/${gifs[gifUsed]}`;
+    hologram.src = `/img/gifs/${gifs[gifUsed]}`;
 
     let coll = (docWidth - 1000) / 2;
 
