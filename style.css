@@ -511,5 +511,15 @@ body {
       float: right; }
     #blog .sectionWrap .display-posts-listing .listing-item .content img {
       margin: 1em auto; }
+#blog.archive {
+  background-image: initial; }
+
+#archiveLink {
+  color: white;
+  display: block;
+  margin: 1em auto 0 auto;
+  text-align: center; }
+  #archiveLink:visited {
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */
