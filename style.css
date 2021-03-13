@@ -252,10 +252,12 @@ body {
   background-size: cover;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges; }
+  image-rendering: crisp-edges;
+  height: calc(100vh - 95px) !important; }
   #aboutUs p {
     display: block;
-    margin-bottom: 1em; }
+    background-color: initial;
+    text-align: center; }
 
 #calendar {
   background-image: url("./img/stars.gif");
@@ -311,7 +313,7 @@ body {
       overflow-y: hidden;
       overflow-x: scroll;
       position: relative;
-      height: 150px;
+      height: 100px;
       white-space: nowrap; }
       #albumsHere::-webkit-scrollbar {
         height: 2px;
@@ -338,7 +340,8 @@ body {
         padding-right: -1em;
         height: 0em;
         margin-left: 0.5em;
-        vertical-align: text-top; } }
+        vertical-align: text-top;
+        font-size: 1.6em; } }
   #albumsHere .albumBox {
     position: relative; }
     @media (max-width: 767px) {
@@ -392,14 +395,14 @@ body {
 #infoHere {
   display: inline-block;
   width: calc(75% - 1em);
-  margin-left: 1em;
+  padding-left: 1em;
   min-height: 750px;
   transition: min-height 0.5s; }
   @media (max-width: 767px) {
     #infoHere {
       width: 100%;
       min-height: 500px;
-      margin-top: 1em; } }
+      padding: 1em 1em 0 1em; } }
   #infoHere img {
     max-width: 100%;
     max-height: 400px; }

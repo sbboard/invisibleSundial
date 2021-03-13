@@ -259,12 +259,11 @@ body
     image-rendering: pixelated
     image-rendering: -moz-crisp-edges
     image-rendering: crisp-edges
+    height: calc(100vh - 95px)!important
     p
         display: block
-        margin-bottom: 1em
-    // h1
-    //     font-family: finity
-    //     text-transform: uppercase
+        background-color: initial
+        text-align: center
 #calendar
     background-image: url('./img/stars.gif')
     background-position: center
@@ -322,7 +321,7 @@ $boxHeight: 150px
         overflow-y: hidden
         overflow-x: scroll
         position: relative
-        height: 150px
+        height: 100px
         white-space: nowrap
         &::-webkit-scrollbar 
             height: 2px
@@ -349,6 +348,7 @@ $boxHeight: 150px
             height: 0em
             margin-left: .5em
             vertical-align: text-top
+            font-size: 1.6em
     .albumBox
         position: relative
         @include mobile
@@ -397,13 +397,13 @@ $boxHeight: 150px
 #infoHere
     display: inline-block
     width: calc(75% - 1em)
-    margin-left: 1em
+    padding-left: 1em
     min-height: 750px
     transition: min-height .5s
     @include mobile
         width: 100%
         min-height: 500px
-        margin-top: 1em
+        padding: 1em 1em 0 1em
     img
         max-width: 100%
         max-height: 400px

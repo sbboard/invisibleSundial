@@ -7,12 +7,12 @@
     <title>The Invisible Sundial</title>
     <link
       rel="stylesheet"
-      href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
+      href="/node_modules\@fortawesome\fontawesome-free\css\all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
+    <script src="/node_modules\@fortawesome\fontawesome-free\js\all.min.js"></script>
 	  <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
@@ -47,18 +47,18 @@ img.emoji {
 <script type='text/javascript' src='http://theinvisiblesundial.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 <script type='text/javascript' id='mec-frontend-script-js-extra'>
 /* <![CDATA[ */
-var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"http:\/\/theinvisiblesundial.com\/wp-admin\/admin-ajax.php","fes_nonce":"474e8d021c","current_year":"2021","current_month":"03","datepicker_format":"yy-mm-dd&Y-m-d"};
+var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":"minute","minutes":"minutes","second":"second","seconds":"seconds","elementor_edit_mode":"no","recapcha_key":"","ajax_url":"http:\/\/theinvisiblesundial.com\/wp-admin\/admin-ajax.php","fes_nonce":"3238dc8695","current_year":"2021","current_month":"03","datepicker_format":"yy-mm-dd&Y-m-d"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/js/frontend.js?ver=5.17.5' id='mec-frontend-script-js'></script>
 <script type='text/javascript' src='http://theinvisiblesundial.com/wp-content/plugins/modern-events-calendar-lite/assets/js/events.js?ver=5.17.5' id='mec-events-script-js'></script>
-<link rel="https://api.w.org/" href="http://theinvisiblesundial.com/index.php?rest_route=/" /><link rel="alternate" type="application/json" href="http://theinvisiblesundial.com/index.php?rest_route=/wp/v2/pages/10" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://theinvisiblesundial.com/xmlrpc.php?rsd" />
+<link rel="https://api.w.org/" href="http://theinvisiblesundial.com/wp-json/" /><link rel="alternate" type="application/json" href="http://theinvisiblesundial.com/wp-json/wp/v2/pages/10" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://theinvisiblesundial.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://theinvisiblesundial.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.7" />
 <link rel="canonical" href="http://theinvisiblesundial.com/" />
 <link rel='shortlink' href='http://theinvisiblesundial.com/' />
-<link rel="alternate" type="application/json+oembed" href="http://theinvisiblesundial.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Ftheinvisiblesundial.com%2F" />
-<link rel="alternate" type="text/xml+oembed" href="http://theinvisiblesundial.com/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Ftheinvisiblesundial.com%2F&#038;format=xml" />
+<link rel="alternate" type="application/json+oembed" href="http://theinvisiblesundial.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftheinvisiblesundial.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://theinvisiblesundial.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Ftheinvisiblesundial.com%2F&#038;format=xml" />
 <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><!-- Dojo Digital Hide Title -->
 <script type="text/javascript">
 	jQuery(document).ready(function($){
@@ -100,9 +100,9 @@ var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":
     <script>
   AOS.init();
 </script>
-    <audio id="mainTrack" src="./mp3/website.mp3" volume=".2" autoplay onended="mainEnd()"></audio>
-    <audio id="secretTrack" src="./mp3/gif.mp3" preload volume=".2" onended="secretEnd()"></audio>
-    <audio id="rabbitTrack" src="./mp3/creed.mp3" preload volume=".2" onended="secretEnd()"></audio>
+    <audio id="mainTrack" src="/mp3/website.mp3" volume=".2" autoplay onended="mainEnd()"></audio>
+    <audio id="secretTrack" src="/mp3/gif.mp3" preload volume=".2" onended="secretEnd()"></audio>
+    <audio id="rabbitTrack" src="/mp3/creed.mp3" preload volume=".2" onended="secretEnd()"></audio>
     <script>
     let mainTrack = document.getElementById("mainTrack")
       function changeMusic(trackToPlay){
@@ -130,7 +130,7 @@ var mecdata = {"day":"day","days":"days","hour":"hour","hours":"hours","minute":
     </script>
     <div id="leftOverflow"></div>
     <div id="rightOverflow"></div>
-    <script src="./js/overflow.js"></script>
+    <script src="/js/overflow.js"></script>
     
 	    
 	<h3><span class="dojodigital_toggle_title">Posts</span></h3>    <div id="splash" class="section">
@@ -192,17 +192,17 @@ With influences from prog-rock, synth-pop, shoegaze, electronica, post rock, and
   <div class="sectionWrap">
     <h1><span>news</span></h1>
     
-<ul class="display-posts-listing"><li class="listing-item"><a class="title" href="http://theinvisiblesundial.com/?p=67">rod</a> <span class="date">(3/10/2021)</span><div class="content">(CNN)A lot of Democrats are mad at Sen. Joe Manchin.
+<ul class="display-posts-listing"><li class="listing-item"><span class="title">rod</span> <span class="date">(3/10/2021)</span><div class="content">(CNN)A lot of Democrats are mad at Sen. Joe Manchin.
 
 Lauren A. Wright 
 Lauren A. Wright
 The Democrat from West Virgi<img src="https://gang-fight.com/assets/global/sidebar/scanlines4.png" alt="" />nia drew the wrath of his party this weekend when he nearly torpedoed the Democrats&#8217; $1.9 trillion coronavirus relief package over an unemployment benefit tax provision he claimed was a surprise. It was not the first time in recent weeks that Manchin has been singled out by members of his own party, who have criticized him for his hesitation to embrace progressive positions on issues ranging from abolishing the filibuster to defunding the police.
 But wholesale condemnation of Manchin, either by other lawmakers or progressive advocates who disagree with him, fails to acknowledge the clear net benefits of having a Democratic senator represent one of the most solidly Republican states in the country, where, according to Gallup, conservatives outnumber liberals by an almost a three-to-one margin.
-If Democrats want to dominate the legislative agenda, they ought to focus on winning new seats, not attacking established moderates. And the relevant question is not whether Manchin always votes the way the typical Democrat wishes, but whether he does so more often than the Republican senator who would almost surely replace him if he ignored West Virginia politics.</div></li><li class="listing-item"><a class="title" href="http://theinvisiblesundial.com/?p=65">pen island</a> <span class="date">(3/10/2021)</span><div class="content">(CNN)A third round of stimulus payments is expected to be on the way later this month.
+If Democrats want to dominate the legislative agenda, they ought to focus on winning new seats, not attacking established moderates. And the relevant question is not whether Manchin always votes the way the typical Democrat wishes, but whether he does so more often than the Republican senator who would almost surely replace him if he ignored West Virginia politics.</div></li><li class="listing-item"><span class="title">pen island</span> <span class="date">(3/10/2021)</span><div class="content">(CNN)A third round of stimulus payments is expected to be on the way later this month.
 
 The payments are included in a sweeping $1.9 trillion Covid relief package and are worth up to $1,400 per person, including dependents. So a couple with two children could receive up to $5,600. Unlike prior rounds, families will now receive the additional money for adult dependents over the age of 17.
 Roughly 90% of American households will be eligible, according to an estimate from the Penn Wharton Budget Model.
-Use our calculator below to see what you can expect to get.</div></li><li class="listing-item"><a class="title" href="http://theinvisiblesundial.com/?p=1">This is it!</a> <span class="date">(1/16/2021)</span><div class="content">What is Lorem Ipsum?
+Use our calculator below to see what you can expect to get.</div></li><li class="listing-item"><span class="title">This is it!</span> <span class="date">(1/16/2021)</span><div class="content">What is Lorem Ipsum?
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 Why do we use it?
@@ -216,7 +216,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
 Where can I get some?
 You can&#8217;t. It is illegal.</div></li></ul>
-    
+    <a id="archiveLink" href="/archive/">news archive</a>
   </div>
 </div>
 
@@ -241,7 +241,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             
             <div class="mec-calendar-table" id="mec_skin_events_23">
                 <div class="mec-month-container mec-month-container-selected" id="mec_monthly_view_month_23_202103" data-month-id="202103"><dl class="mec-calendar-table-head"><dt class="mec-calendar-day-head">MO</dt><dt class="mec-calendar-day-head">TU</dt><dt class="mec-calendar-day-head">WE</dt><dt class="mec-calendar-day-head">TH</dt><dt class="mec-calendar-day-head">FR</dt><dt class="mec-calendar-day-head">SA</dt><dt class="mec-calendar-day-head">SU</dt></dl><dl class="mec-calendar-row">
-    <dt class="mec-calendar-day mec-has-event" data-mec-cell="20210301" data-day="1" data-month="202103"><a href="#" class="mec-has-event-a">1</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210302" data-day="2" data-month="202103">2</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210303" data-day="3" data-month="202103">3</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210304" data-day="4" data-month="202103">4</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210305" data-day="5" data-month="202103">5</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210306" data-day="6" data-month="202103">6</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210307" data-day="7" data-month="202103">7</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210308" data-day="8" data-month="202103"><a href="#" class="mec-has-event-a">8</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210309" data-day="9" data-month="202103">9</dt></dt><dt class="mec-calendar-day mec-selected-day" data-mec-cell="20210310" data-day="10" data-month="202103">10</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210311" data-day="11" data-month="202103">11</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210312" data-day="12" data-month="202103">12</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210313" data-day="13" data-month="202103">13</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210314" data-day="14" data-month="202103">14</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210315" data-day="15" data-month="202103"><a href="#" class="mec-has-event-a">15</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210316" data-day="16" data-month="202103">16</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210317" data-day="17" data-month="202103">17</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210318" data-day="18" data-month="202103">18</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210319" data-day="19" data-month="202103">19</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210320" data-day="20" data-month="202103">20</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210321" data-day="21" data-month="202103">21</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210322" data-day="22" data-month="202103"><a href="#" class="mec-has-event-a">22</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210323" data-day="23" data-month="202103">23</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210324" data-day="24" data-month="202103">24</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210325" data-day="25" data-month="202103">25</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210326" data-day="26" data-month="202103">26</dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210327" data-day="27" data-month="202103"><a href="#" class="mec-has-event-a">27</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210328" data-day="28" data-month="202103">28</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210329" data-day="29" data-month="202103"><a href="#" class="mec-has-event-a">29</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210330" data-day="30" data-month="202103">30</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210331" data-day="31" data-month="202103">31</dt></dt><dt class="mec-table-nullday">1</dt><dt class="mec-table-nullday">2</dt><dt class="mec-table-nullday">3</dt><dt class="mec-table-nullday">4</dt></dl>
+    <dt class="mec-calendar-day mec-has-event" data-mec-cell="20210301" data-day="1" data-month="202103"><a href="#" class="mec-has-event-a">1</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210302" data-day="2" data-month="202103">2</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210303" data-day="3" data-month="202103">3</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210304" data-day="4" data-month="202103">4</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210305" data-day="5" data-month="202103">5</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210306" data-day="6" data-month="202103">6</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210307" data-day="7" data-month="202103">7</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210308" data-day="8" data-month="202103"><a href="#" class="mec-has-event-a">8</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210309" data-day="9" data-month="202103">9</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210310" data-day="10" data-month="202103">10</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210311" data-day="11" data-month="202103">11</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210312" data-day="12" data-month="202103">12</dt></dt><dt class="mec-calendar-day mec-selected-day" data-mec-cell="20210313" data-day="13" data-month="202103">13</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210314" data-day="14" data-month="202103">14</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210315" data-day="15" data-month="202103"><a href="#" class="mec-has-event-a">15</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210316" data-day="16" data-month="202103">16</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210317" data-day="17" data-month="202103">17</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210318" data-day="18" data-month="202103">18</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210319" data-day="19" data-month="202103">19</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210320" data-day="20" data-month="202103">20</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210321" data-day="21" data-month="202103">21</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210322" data-day="22" data-month="202103"><a href="#" class="mec-has-event-a">22</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210323" data-day="23" data-month="202103">23</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210324" data-day="24" data-month="202103">24</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210325" data-day="25" data-month="202103">25</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210326" data-day="26" data-month="202103">26</dt></dt><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210327" data-day="27" data-month="202103"><a href="#" class="mec-has-event-a">27</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210328" data-day="28" data-month="202103">28</dt></dt></dl><dl class="mec-calendar-row"><dt class="mec-calendar-day mec-has-event" data-mec-cell="20210329" data-day="29" data-month="202103"><a href="#" class="mec-has-event-a">29</a></dt></dt><dt class="mec-calendar-day" data-mec-cell="20210330" data-day="30" data-month="202103">30</dt></dt><dt class="mec-calendar-day" data-mec-cell="20210331" data-day="31" data-month="202103">31</dt></dt><dt class="mec-table-nullday">1</dt><dt class="mec-table-nullday">2</dt><dt class="mec-table-nullday">3</dt><dt class="mec-table-nullday">4</dt></dl>
 </div>
             </div>
         </div>
@@ -268,7 +268,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -278,10 +278,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Weekly on Mondays",
-            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+            "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210302" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 2nd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210303" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 3rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210304" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 4th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210305" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 5th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210306" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 6th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210307" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 7th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210308" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 8th</h3>        <script type="application/ld+json">
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/events/weekly-on-mondays/" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210302" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 2nd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210303" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 3rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210304" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 4th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210305" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 5th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210306" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 6th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210307" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 7th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210308" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 8th</h3>        <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Event",
@@ -304,7 +304,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -314,10 +314,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Weekly on Mondays",
-            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+            "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210309" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 9th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210310"  style="display: block;"><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 10th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210311" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 11th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210312" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 12th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210313" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 13th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210314" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 14th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210315" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 15th</h3>        <script type="application/ld+json">
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/events/weekly-on-mondays/" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210309" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 9th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210310" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 10th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210311" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 11th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210312" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 12th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210313"  style="display: block;"><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 13th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210314" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 14th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210315" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 15th</h3>        <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Event",
@@ -340,7 +340,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -350,10 +350,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Weekly on Mondays",
-            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+            "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210316" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 16th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210317" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 17th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210318" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 18th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210319" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 19th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210320" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 20th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210321" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 21st</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210322" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 22nd</h3>        <script type="application/ld+json">
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/events/weekly-on-mondays/" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210316" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 16th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210317" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 17th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210318" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 18th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210319" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 19th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210320" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 20th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210321" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 21st</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210322" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 22nd</h3>        <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Event",
@@ -376,7 +376,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -386,10 +386,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Weekly on Mondays",
-            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+            "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210323" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 23rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210324" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 24th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210325" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 25th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210326" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 26th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210327" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 27th</h3>        <script type="application/ld+json">
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/events/weekly-on-mondays/" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210323" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 23rd</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210324" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 24th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210325" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 25th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210326" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 26th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210327" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 27th</h3>        <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Event",
@@ -412,7 +412,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=monthly-on-27th",
+                "url": "http://theinvisiblesundial.com/events/monthly-on-27th/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -422,10 +422,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Monthly on 27th",
-            "url": "http://theinvisiblesundial.com/?mec-events=monthly-on-27th"
+            "url": "http://theinvisiblesundial.com/events/monthly-on-27th/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="20" href="http://theinvisiblesundial.com/?mec-events=monthly-on-27th" target="_self" rel="noopener">Monthly on 27th</a><span class="event-color" style="background: #00a0d2"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210328" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 28th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210329" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 29th</h3>        <script type="application/ld+json">
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="20" href="http://theinvisiblesundial.com/events/monthly-on-27th/" target="_self" rel="noopener">Monthly on 27th</a><span class="event-color" style="background: #00a0d2"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210328" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 28th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210329" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 29th</h3>        <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "Event",
@@ -448,7 +448,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
             },
             "offers":
             {
-                "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays",
+                "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/",
                 "price": "",
                 "priceCurrency": "$",
                 "availability": "https://schema.org/InStock",
@@ -458,10 +458,10 @@ You can&#8217;t. It is illegal.</div></li></ul>
             "description": "",
             "image": "",
             "name": "Weekly on Mondays",
-            "url": "http://theinvisiblesundial.com/?mec-events=weekly-on-mondays"
+            "url": "http://theinvisiblesundial.com/events/weekly-on-mondays/"
         }
         </script>
-        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/?mec-events=weekly-on-mondays" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210330" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 30th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210331" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 31st</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div></div></div></div><div class="mec-event-footer"></div>    </div>
+        <article class="mec-past-event mec-event-article "><div class="mec-event-image"></div><div class="mec-event-time mec-color"><i class="mec-sl-clock-o"></i> 8:00 am - 6:00 pm</div><h4 class="mec-event-title"><a class="mec-color-hover"  data-event-id="19" href="http://theinvisiblesundial.com/events/weekly-on-mondays/" target="_self" rel="noopener">Weekly on Mondays</a><span class="event-color" style="background: #e14d43"></span></h4><div class="mec-event-detail"><div class="mec-event-loc-place"></div></div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210330" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 30th</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div><div class="mec-calendar-events-sec" data-mec-cell="20210331" ><h6 class="mec-table-side-title">Events for March</h6><h3 class="mec-color mec-table-side-day"> 31st</h3><article class="mec-event-article"><div class="mec-event-detail">No Events</div></article></div></div></div></div><div class="mec-event-footer"></div>    </div>
     
 </div>
   </div>
@@ -479,7 +479,7 @@ You can&#8217;t. It is illegal.</div></li></ul>
 <footer>
       <div id="rabbit_holder">
       <img
-        src="img/rabbit.gif"
+        src="/img/rabbit.gif"
         onclick="changeMusic('rabbit')"
         onmouseover="var rh = document.getElementById('rabbit_holder'); rh.style['text-align'] = ( rh.style['text-align'] == 'right' ? 'left' : 'right' );"
       />
@@ -512,7 +512,7 @@ jQuery(document).ready(function()
     jQuery("#mec_monthly_view_month_23_202103").mecMonthlyView(
     {
         id: "23",
-        today: "20210310",
+        today: "20210313",
         month_id: "202103",
         active_month: {year: "2021", month: "03"},
         next_month: {year: "2021", month: "04"},
